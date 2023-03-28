@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Vollkorn:ital,wght@0,400;0,700;1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Vollkorn", serif;
+  background: white;
+  color: #373986;
+
+  /* background: linear-gradient(to bottom, black, black 50%, #222 50%, #222); */
+  background-size: 100% 4px;
+  /* animation: gradientMove 200ms ease infinite; */
+}
+.button,
+a,
+button {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  background: transparent;
+  border: 3px solid #3bb9c4;
+  border-radius: 10px;
+  color: #3bb9c4;
+  cursor: pointer;
+  font-family: "Arimo", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+}
+
+button:hover {
+  background-color: #ccf0f3;
+}
+
+button:active {
+  background-color: #fff;
+  color: #3bb9c4;
+  box-shadow: 0 0 0 2px #3bb9c4;
+  animation: blip 0.3s linear;
+}
+
+@keyframes blip {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
