@@ -1,3 +1,4 @@
+import React from "react";
 import { createContext, useContext, useEffect, useState } from "react";
 
 interface User {
@@ -7,7 +8,7 @@ interface User {
   goal_name: string;
   goal_notes: string;
   id: string;
-  timestamp: string;
+  timestamp: string | null;
 }
 
 interface StoryContextValue {
