@@ -1,0 +1,2108 @@
+{
+  "status": 200,
+  "data": {
+    "_id": "641cc5afecbb05062ed1b522",
+    "config": {
+      "AppSettings": {
+        "org_id": "org_qPy73eB0rmuhsLmh",
+        "uri": "https://demo-config.dev.goal-mapper.co.uk",
+        "backColour": {
+          "default": "#7A7A7A",
+          "client": ""
+        },
+        "nextColour": {
+          "default": "#BF802F",
+          "client": ""
+        },
+        "textPrimaryColor": {
+          "default": "#0C3957",
+          "client": ""
+        },
+        "checkboxColour": {
+          "default": "#3BB9C4",
+          "client": ""
+        },
+        "filledCheckboxColour": {
+          "default": "#2B9BA5",
+          "client": ""
+        },
+        "tenantCompanyName": {
+          "default": "ammoniteLogoTest",
+          "client": "* Demo Firm"
+        },
+        "tenantFCAtext": {
+          "default": "ammonite is authorised and regulated by the Financial Conduct Authority no. 843433",
+          "client": "* Demo Firm is authorised and regulated by the Financial Conduct Authority no. XXXXXX"
+        },
+        "sendCustomerEmailToTenant": {
+          "default": false,
+          "client": true
+        }
+      },
+      "Login": {
+        "backgroundColor": {
+          "default": "#B1DECA",
+          "client": ""
+        },
+        "buttonTextColor": {
+          "default": "#232323",
+          "client": ""
+        },
+        "logo": {
+          "default": "https://storage.googleapis.com/goal-mapper-assets-mgmt-3134/ammonite.svg",
+          "client": "https://storage.googleapis.com/goal-mapper-assets-mgmt-3134/Demo%20Firm%20logo.png"
+        }
+      },
+      "ChooseRoute": {
+        "goalMapperButtonColor": {
+          "default": "#247BA0",
+          "client": ""
+        },
+        "dashboardButtonColor": {
+          "default": "#373986",
+          "client": ""
+        },
+        "buttonTextColor": {
+          "default": "#FFFFFF",
+          "client": ""
+        }
+      },
+      "About": {
+        "Card1": {
+          "intro": {
+            "default": "Everyone has goals, and with a clear plan you are more likely to achieve them. Smart tax planning and low-cost investing can help.",
+            "client": "* Everyone has goals, and with a clear plan you are more likely to achieve them. Smart tax planning and low-cost investing can help."
+          }
+        },
+        "Card2": {
+          "intro": {
+            "default": "This session will help you map out your financial goals. No personal recommendations or advice will be given today - this session aims to highlight your advice needs.",
+            "client": "* This session will help you map out your financial goals. No personal recommendations or advice will be given today - this session aims to highlight your advice needs."
+          }
+        },
+        "Card3": {
+          "intro": {
+            "default": "Setting your goals sooner rather than later could make a big difference to achieving them. So let’s start now!",
+            "client": "* Setting your goals sooner rather than later could make a big difference to achieving them. So let’s start now!"
+          }
+        }
+      },
+      "ThankYou": {
+        "intro": {
+          "default": "Thank you for your time today and for sharing your goals. We'd like to send you an email with a summary of today's session and with next steps.",
+          "client": "* Thank you for your time today and for sharing your goals. We'd like to send you an email with a summary of today's session and with next steps."
+        },
+        "bulletPoint1": {
+          "default": "We'll include your (free!) goals report with the email, with ways you could improve your financial health.",
+          "client": "* We'll include your (free!) goals report with the email, with ways you could improve your financial health."
+        },
+        "bulletPoint2": {
+          "default": "We'll follow up with a call to see if you have any questions about the report.",
+          "client": "* We'll follow up with a call to see if you have any questions about the report."
+        },
+        "bulletPoint3": {
+          "default": "We'll offer expert pension and investment advice at low cost, if you seek it.",
+          "client": "* We'll offer expert pension and investment advice at low cost, if you seek it."
+        },
+        "conditionsText": {
+          "default": "To help prepare your free goals report, we will need to pass this information on to our Central Team. By ticking this box you agree to the storage and handling of your data by ammonite",
+          "client": "* To help prepare your free goals report, we will need to pass this information on to our Central Team. By ticking this box you agree to the storage and handling of your data by Demo Firm"
+        }
+      },
+      "reportEmail": {
+        "aboutUsText": {
+          "default": [
+            {
+              "text": "We use a goals-based approach to both planning and investment. We think this is vital to help clients set their priorities based on their investment timeframe and personal circumstances."
+            },
+            {
+              "text": "This goals-based approach helps our clients to:"
+            }
+          ],
+          "client": [
+            {
+              "text": "* We use a goals-based approach to both planning and investment. We think this is vital to help clients set their priorities based on their investment timeframe and personal circumstances."
+            },
+            {
+              "text": "* This goals-based approach helps our clients to:"
+            }
+          ]
+        },
+        "aboutUsBulletPoints": {
+          "default": [
+            {
+              "text": "Identify, prioritise and better understand the achievability of goals"
+            },
+            {
+              "text": "Have a rational and disciplined investment approach throughout market volatility and cycles"
+            },
+            {
+              "text": "Visualise the investment journey to better identify the steps necessary to make life-changing decisions"
+            }
+          ],
+          "client": [
+            {
+              "text": "* Identify, prioritise and better understand the achievability of goals"
+            },
+            {
+              "text": "* Have a rational and disciplined investment approach throughout market volatility and cycles"
+            },
+            {
+              "text": "* Visualise the investment journey to better identify the steps necessary to make life-changing decisions"
+            }
+          ]
+        },
+        "investmentText": {
+          "default": [
+            {
+              "title": "",
+              "text": "There are lots of investments available to customers but there a few things you should consider before jumping in or making changes to existing investments:"
+            },
+            {
+              "title": "Diversification is key",
+              "text": "So basically not “all your eggs in one basket”. We feel it’s important to spread investment risk, and invest clients globally in things like bonds, stocks and shares."
+            },
+            {
+              "title": "Don’t pay more than you need to, as an investor",
+              "text": "Investing has become much more efficient over the past decade, and ETFs (Exchange Traded Funds) offer a very low-cost way to gaining exposure to global bonds and stock markets. Part of the skill to benefiting from good returns over the long term comes down to picking the right countries and sectors across the world, for consistent growth. Passive investing puts a big emphasis on this and is a fraction of the cost of active investing (in fact it’s at least half the ongoing cost to the investor). We can give you access to some of the best passive funds in the world."
+            },
+            {
+              "title": "Invest in line with your goals",
+              "text": "We think it’s important to treat each goal differently when you’re investing.  You won’t want to take the same amount of risk for a university pot for your child as you would for a sports car you want to aim for when you’re 60.  We can help you choose the right investment for each of your goals, and make sure that the whole portfolio is in line with your overall attitude to risk.  We know that your goals might change as your situation does.  So we’ll help you review your goals and attitude to risk every year, so that you can always feel like you’ve got the right financial plan."
+            }
+          ],
+          "client": [
+            {
+              "title": "",
+              "text": "* There are lots of investments available to customers but there a few things you should consider before jumping in or making changes to existing investments:"
+            },
+            {
+              "title": "* Diversification is key",
+              "text": "* So basically not “all your eggs in one basket”. We feel it’s important to spread investment risk, and invest clients globally in things like bonds, stocks and shares."
+            },
+            {
+              "title": "* Don’t pay more than you need to, as an investor",
+              "text": "* Investing has become much more efficient over the past decade, and ETFs (Exchange Traded Funds) offer a very low-cost way to gaining exposure to global bonds and stock markets. Part of the skill to benefiting from good returns over the long term comes down to picking the right countries and sectors across the world, for consistent growth. Passive investing puts a big emphasis on this and is a fraction of the cost of active investing (in fact it’s at least half the ongoing cost to the investor). We can give you access to some of the best passive funds in the world."
+            },
+            {
+              "title": "* Invest in line with your goals",
+              "text": "* We think it’s important to treat each goal differently when you’re investing.  You won’t want to take the same amount of risk for a university pot for your child as you would for a sports car you want to aim for when you’re 60.  We can help you choose the right investment for each of your goals, and make sure that the whole portfolio is in line with your overall attitude to risk.  We know that your goals might change as your situation does.  So we’ll help you review your goals and attitude to risk every year, so that you can always feel like you’ve got the right financial plan."
+            }
+          ]
+        },
+        "chargesText": {
+          "default": [
+            {
+              "title": "",
+              "text": "What are the fees if I’m using wrappers like an ISA and a Pension for tax-free growth and investments recommended by a qualified financial adviser, who can also help me plan for my goals and comfortable retirement?"
+            },
+            {
+              "title": "",
+              "text": "To be invested for the long run and benefit from ISA and Pension tax relief, there are ongoing cost to the product providers each year. There are lots of providers of ISAs, Pensions and Investments, and we take great care in providing our clients with high quality yet low cost. It’s part of the reason why clients of ours pay for our ongoing advice alongside helpful reporting, quality checks on providers and most importantly ensuring you are on track to reaching your goals. We believe there is no point paying for what you don’t need, and that’s why our total overall ongoing costs are comparatively low. We think the most value for clients is focusing on their goals and giving advice on how they can reach them, with quality products and a personal ongoing service. That way you get the best value possible, with the security that you’ve got someone helping to achieve your goals."
+            }
+          ],
+          "client": [
+            {
+              "title": "",
+              "text": "* What are the fees if I’m using wrappers like an ISA and a Pension for tax-free growth and investments recommended by a qualified financial adviser, who can also help me plan for my goals and comfortable retirement?"
+            },
+            {
+              "title": "",
+              "text": "* To be invested for the long run and benefit from ISA and Pension tax relief, there are ongoing cost to the product providers each year. There are lots of providers of ISAs, Pensions and Investments, and we take great care in providing our clients with high quality yet low cost. It’s part of the reason why clients of ours pay for our ongoing advice alongside helpful reporting, quality checks on providers and most importantly ensuring you are on track to reaching your goals. We believe there is no point paying for what you don’t need, and that’s why our total overall ongoing costs are comparatively low. We think the most value for clients is focusing on their goals and giving advice on how they can reach them, with quality products and a personal ongoing service. That way you get the best value possible, with the security that you’ve got someone helping to achieve your goals."
+            }
+          ]
+        },
+        "thankYouText": {
+          "default": [
+            {
+              "text": "I hope you’ve found these tips useful . I really enjoy passing on knowledge to help customers achieve financial wellbeing. We’ve only touched the tip of the iceberg in this report today - I hope to speak with you to establish your own personal financial plan with money saving advice aligned to a clear plan towards achieving your goals by growing your wealth. By spending a little now on financial advice we have no doubt this will save you a fortune and make you wealthier over the long run."
+            }
+          ],
+          "client": [
+            {
+              "text": "* I hope you’ve found these tips useful . I really enjoy passing on knowledge to help customers achieve financial wellbeing. We’ve only touched the tip of the iceberg in this report today - I hope to speak with you to establish your own personal financial plan with money saving advice aligned to a clear plan towards achieving your goals by growing your wealth. By spending a little now on financial advice we have no doubt this will save you a fortune and make you wealthier over the long run."
+            }
+          ]
+        },
+        "yourNextSteps": {
+          "default": [],
+          "client": ""
+        }
+      },
+      "Advisors": {
+        "default": [
+          {
+            "email": "caroline@ammonitewealth.com",
+            "advisorImageUrl": "http://cdn.mcauto-images-production.sendgrid.net/3a0369c3146d2bf1/f299b26e-de59-44b7-8ede-4415293d2359/242x242.png",
+            "advisorFirstName": "Caroline",
+            "advisorLastName": "Duff",
+            "advisorJobTitle": "Chartered Financial Adviser",
+            "advisorText": [
+              {
+                "text": "Caroline has over fifteen years investment and wealth management experience from the likes of Bloomberg and Barclays Wealth. She is a chartered member of the Chartered Institute for Securities &amp; Investments"
+              },
+              {
+                "text": "Caroline holds the highly acclaimed Private Client Investment Advice & Management qualification (level 6) and Integrity Matters Certificate.  She also holds the Investment Management Certificate, through the CFA Society."
+              }
+            ]
+          }
+        ],
+        "client": [
+          {
+            "email": "robert@ammonitewealth.com",
+            "advisorImageUrl": "https://storage.googleapis.com/goal-mapper-assets-mgmt-3134/Example%20Adviser.png",
+            "advisorFirstName": "Example",
+            "advisorLastName": "Adviser 1",
+            "advisorJobTitle": "* Financial Adviser",
+            "advisorText": [
+              {
+                "text": "* Example has worked as a Financial Adviser for over 10 years.  She has a wide range of experience, including protection, estate planning and investments, and is an expert in retirement and pension planning."
+              },
+              {
+                "text": "* Example is passionate about working with clients to create a financial plan that works for them, and helps them to achieve their goals."
+              }
+            ]
+          },
+          {
+            "email": "caroline@ammonitewealth.com",
+            "advisorImageUrl": "https://storage.googleapis.com/goal-mapper-assets-mgmt-3134/Example%20Adviser.png",
+            "advisorFirstName": "Example",
+            "advisorLastName": "Adviser 2",
+            "advisorJobTitle": "* Financial Adviser",
+            "advisorText": [
+              {
+                "text": "* Example has worked as a Financial Adviser for over 10 years.  She has a wide range of experience, including protection, estate planning and investments, and is an expert in retirement and pension planning."
+              },
+              {
+                "text": "* Example is passionate about working with clients to create a financial plan that works for them, and helps them to achieve their goals."
+              }
+            ]
+          },
+          {
+            "email": "testing@ammonitewealth.com",
+            "advisorImageUrl": "https://storage.googleapis.com/goal-mapper-assets-mgmt-3134/Example%20Adviser.png",
+            "advisorFirstName": "Example",
+            "advisorLastName": "Adviser 3",
+            "advisorJobTitle": "* Financial Adviser",
+            "advisorText": [
+              {
+                "text": "* Example has worked as a Financial Adviser for over 10 years.  She has a wide range of experience, including protection, estate planning and investments, and is an expert in retirement and pension planning."
+              },
+              {
+                "text": "* Example is passionate about working with clients to create a financial plan that works for them, and helps them to achieve their goals."
+              }
+            ]
+          }
+        ]
+      },
+      "sBRConfig": [
+        {
+          "sBRConfigName": "aConfigName",
+          "sBRPDFHeader": {
+            "default": "https://storage.googleapis.com/goal-mapper-assets-mgmt-3134/defaultSBReportHeader.png",
+            "client": "https://storage.googleapis.com/goal-mapper-assets-mgmt-3134/Demo%20Firm%20SR%20Header.png"
+          },
+          "introductionText": {
+            "default": [
+              {
+                "paragraph": ", we recently took the time to establish your financial goals. Based on these goals and your financial situation, we’ve put together our financial plan and recommendations for you. These are designed to make sure your hard earned money is working as hard for you as possible, and empower you to feel more in control of your financial planning."
+              },
+              {
+                "paragraph": "It’s important for you to read this report carefully, together with all the supplementary information we’ve provided (including more details about the recommended funds, providers, and wrappers, together with illustrations)."
+              },
+              {
+                "paragraph": "If you’re happy with our recommendations, and want to proceed, please sign the forms that we’ve provided, or drop us an email and we can walk you through the steps."
+              }
+            ],
+            "client": [
+              {
+                "paragraph": ",* we recently took the time to establish your financial goals. Based on these goals and your financial situation, we’ve put together our financial plan and recommendations for you. These are designed to make sure your hard earned money is working as hard for you as possible, and empower you to feel more in control of your financial planning."
+              },
+              {
+                "paragraph": "* It’s important for you to read this report carefully, together with all the supplementary information we’ve provided (including more details about the recommended funds, providers, and wrappers, together with illustrations)."
+              },
+              {
+                "paragraph": "* If you’re happy with our recommendations, and want to proceed, please sign the forms that we’ve provided, or drop us an email and we can walk you through the steps."
+              }
+            ]
+          },
+          "chargesIntroductionText": {
+            "default": [
+              {
+                "paragraph": "From our independent, whole of market research, we choose providers that offer excellent service and expertise, at low cost. We continuously research the market for best of breed product providers and monitor investment performance to optimise customer satisfaction."
+              },
+              {
+                "paragraph": "Your initial implementation charges and ongoing costs will be taken from the products on an ongoing basis, so you don’t have to worry about paying these from your bank account. Taking charges from a pension is tax-efficient since it means that you’re paying from a policy that has benefited from tax relief."
+              },
+              {
+                "paragraph": "The charges are based on percentages. This means that if the investments go up or down in value, then the charges will fluctuate too. The charges are based on just those new policies that will be under our advice, and they’ll come from the investments so you don’t have to worry about paying these from your bank account."
+              },
+              {
+                "paragraph": "It’s important to look at the illustrations we’ve provided to see what the impact of charges will be on your portfolio."
+              },
+              {
+                "paragraph": "Based on current values (including the first years’ contributions as appropriate), the annual charges will be:"
+              }
+            ],
+            "client": [
+              {
+                "paragraph": "* From our independent, whole of market research, we choose providers that offer excellent service and expertise, at low cost. We continuously research the market for best of breed product providers and monitor investment performance to optimise customer satisfaction."
+              },
+              {
+                "paragraph": "* Your initial implementation charges and ongoing costs will be taken from the products on an ongoing basis, so you don’t have to worry about paying these from your bank account. Taking charges from a pension is tax-efficient since it means that you’re paying from a policy that has benefited from tax relief."
+              },
+              {
+                "paragraph": "* The charges are based on percentages. This means that if the investments go up or down in value, then the charges will fluctuate too. The charges are based on just those new policies that will be under our advice, and they’ll come from the investments so you don’t have to worry about paying these from your bank account."
+              },
+              {
+                "paragraph": "* It’s important to look at the illustrations we’ve provided to see what the impact of charges will be on your portfolio."
+              },
+              {
+                "paragraph": "* Based on current values (including the first years’ contributions as appropriate), the annual charges will be:"
+              }
+            ]
+          },
+          "chargesText": {
+            "default": [
+              {
+                "paragraph": " On a long-term basis, we target the following annual growth rates before charges (though investments go up and down)"
+              },
+              {
+                "paragraph": "Low-medium risk - circa 3.0% annualised"
+              },
+              {
+                "paragraph": "Medium risk - circa 5.0% annualised"
+              },
+              {
+                "paragraph": "Medium-high risk - circa 6.5% annualised"
+              },
+              {
+                "paragraph": "High risk - 8.5% annualised"
+              },
+              {
+                "paragraph": "(Please note that these returns aren’t guaranteed and will vary, sometimes significantly, year on year)."
+              }
+            ],
+            "client": [
+              {
+                "paragraph": "* On a long-term basis, we target the following annual growth rates before charges (though investments go up and down)"
+              },
+              {
+                "paragraph": "* Low-medium risk - circa 3.0% annualised"
+              },
+              {
+                "paragraph": "* Medium risk - circa 5.0% annualised"
+              },
+              {
+                "paragraph": "* Medium-high risk - circa 6.5% annualised"
+              },
+              {
+                "paragraph": "* High risk - 8.5% annualised"
+              },
+              {
+                "paragraph": "* (Please note that these returns aren’t guaranteed and will vary, sometimes significantly, year on year)."
+              }
+            ]
+          },
+          "investmentGoalText": {
+            "default": [
+              {
+                "paragraph": "It is therefore appropriate for the following goals, which based on your risk profile and the years to the goal have the following risk levels:"
+              }
+            ],
+            "client": [
+              {
+                "paragraph": "* It is therefore appropriate for the following goals, which based on your risk profile and the years to the goal have the following risk levels:"
+              }
+            ]
+          },
+          "timingText": {
+            "default": [
+              {
+                "paragraph": "Once we’ve received your signed forms, we’ll implement our recommendations."
+              }
+            ],
+            "client": [
+              {
+                "paragraph": "* Once we’ve received your signed forms, we’ll implement our recommendations."
+              }
+            ]
+          },
+          "ongoingServiceText": {
+            "default": [
+              {
+                "paragraph": "We keep a close eye on our recommended platforms and investments, to make sure that they’re doing a good job for our clients. We compare them to the whole market, looking at things like performance, charges and volatility. We are always monitoring the market for enhanced products, so should we recommend any changes we’ll let you know."
+              },
+              {
+                "paragraph": "We also stay on top of changes in regulation and taxation, which might have an impact on your financial planning. We send regular updates to our clients alerting them to things that might be important for them."
+              },
+              {
+                "paragraph": "We're available at any time (subject to working hours) for you to contact. You can get in touch via email, phone, or chat with us using the chatbox on our website."
+              },
+              {
+                "paragraph": "We’ll also be in touch during the year, at important times for financial planning - like before the end of the tax year."
+              },
+              {
+                "paragraph": "We’ll formally review your situation annually. Every year we’ll get in touch to check that your goals are still current, and discuss how you’re progressing towards your goals. We’ll also use that time to find out from you if there have been any changes to your circumstances that might impact your financial planning, and see whether your attitude to risk has changed."
+              },
+              {
+                "paragraph": "We’ll also provide you with a login that you can use see your portfolio online."
+              }
+            ],
+            "client": [
+              {
+                "paragraph": "* We keep a close eye on our recommended platforms and investments, to make sure that they’re doing a good job for our clients. We compare them to the whole market, looking at things like performance, charges and volatility. We are always monitoring the market for enhanced products, so should we recommend any changes we’ll let you know."
+              },
+              {
+                "paragraph": "* We also stay on top of changes in regulation and taxation, which might have an impact on your financial planning. We send regular updates to our clients alerting them to things that might be important for them."
+              },
+              {
+                "paragraph": "* We're available at any time (subject to working hours) for you to contact. You can get in touch via email, phone, or chat with us using the chatbox on our website."
+              },
+              {
+                "paragraph": "* We’ll also be in touch during the year, at important times for financial planning - like before the end of the tax year."
+              },
+              {
+                "paragraph": "* We’ll formally review your situation annually. Every year we’ll get in touch to check that your goals are still current, and discuss how you’re progressing towards your goals. We’ll also use that time to find out from you if there have been any changes to your circumstances that might impact your financial planning, and see whether your attitude to risk has changed."
+              },
+              {
+                "paragraph": "* We’ll also provide you with a login that you can use see your portfolio online."
+              }
+            ]
+          },
+          "riskHeaderText": {
+            "default": "Risk Tolerance and Capacity",
+            "client": "* Risk Tolerance and Capacity"
+          },
+          "riskText": {
+            "default": [
+              {
+                "paragraph": "Each of your goals is different, and because of that we make our investment recommendations on a goal-by-goal basis. To do this, we look at the timeframe for each goal, since you’ll be able to sustain more ‘ups and downs’ for longer term goals than shorter term goals."
+              },
+              {
+                "paragraph": "We also use what’s known as your ‘risk tolerance’ and ‘capacity for risk’ to make our recommendations. ‘Risk tolerance’ means how you feel about risk, and how comfortable you are with fluctuations in the value of your investments. ‘Risk capacity’ is determined by your financial situation, and how much risk you can afford to take. Things like whether you’re still earning, the level of your income / savings compared to your expenditure, and your level of debt will have an impact on your ‘risk capacity’."
+              }
+            ],
+            "client": [
+              {
+                "paragraph": "* Each of your goals is different, and because of that we make our investment recommendations on a goal-by-goal basis. To do this, we look at the timeframe for each goal, since you’ll be able to sustain more ‘ups and downs’ for longer term goals than shorter term goals."
+              },
+              {
+                "paragraph": "* We also use what’s known as your ‘risk tolerance’ and ‘capacity for risk’ to make our recommendations. ‘Risk tolerance’ means how you feel about risk, and how comfortable you are with fluctuations in the value of your investments. ‘Risk capacity’ is determined by your financial situation, and how much risk you can afford to take. Things like whether you’re still earning, the level of your income / savings compared to your expenditure, and your level of debt will have an impact on your ‘risk capacity’."
+              }
+            ]
+          },
+          "riskToleranceHeaderText": {
+            "default": "Your risk tolerance",
+            "client": "* Your risk tolerance"
+          },
+          "riskToleranceText": {
+            "default": "You completed our online risk tolerance questionnaire, and based on your answers your risk tolerance is as follows:",
+            "client": "* You completed our online risk tolerance questionnaire, and based on your answers your risk tolerance is as follows:"
+          },
+          "riskToleranceCategories": {
+            "default": [
+              {
+                "text": "Low risk",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "People in this category are conservative with their investments. They prefer taking a small amount of risk to achieve modest or relatively stable returns. They accept that there may be some short-term periods of fluctuation in value."
+                  },
+                  {
+                    "paragraph": "Depending on the timeframe of a goal, the appropriate level of investment risk will differ, as follows (with 1/10 being lowest risk, and 10/10 being highest risk). Investments with a higher risk category will have more stocks and shares (equities) - equities have the opportunity for higher long-term returns, but potential for more ups and downs along the way."
+                  },
+                  {
+                    "paragraph": "For timeframes of 1-2 years, we recommend keeping money in cash."
+                  },
+                  {
+                    "paragraph": "For timeframes of 3-4 years, where money is coming from cash, we recommend keeping it in cash. Where money is coming from investments, a portfolio would be invested in line with a risk 1/10. Equity exposure for such a portfolio is therefore likely to range from 0-25%."
+                  },
+                  {
+                    "paragraph": "For a timeframe of 5-14 years, a portfolio would be invested in line with a risk 1/10. Equity exposure for such a portfolio is therefore likely to range from 0%-25%."
+                  },
+                  {
+                    "paragraph": "For a timeframe of 15+ years, a portfolio would be invested in line with a risk 2/10. Equity exposure for such a portfolio is therefore likely to range from 5%-35%."
+                  }
+                ],
+                "imageurl": ""
+              },
+              {
+                "text": "Low to Medium risk",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "People in this category are relatively cautious with their investments. They want to try to achieve a reasonable return and are prepared to accept some risk in doing so. Typically these portfolios will exhibit relatively modest yet frequent fluctuations in value."
+                  },
+                  {
+                    "paragraph": "Depending on the timeframe of a goal, the appropriate level of investment risk will differ, as follows (with 1/10 being lowest risk, and 10/10 being highest risk). Investments with a higher risk category will have more stocks and shares (equities) - equities have the opportunity for higher long-term returns, but potential for more ups and downs along the way."
+                  },
+                  {
+                    "paragraph": "For timeframes of 1-2 years, we recommend keeping money in cash."
+                  },
+                  {
+                    "paragraph": "For timeframes of 3-4 years, where money is coming from cash, we recommend keeping it in cash. Where money is coming from investments, a portfolio would be invested in line with a risk 2/10. Equity exposure for such a portfolio is therefore likely to range from 0-25%."
+                  },
+                  {
+                    "paragraph": "This means that for a timeframe of 5-9 years, a portfolio would be invested in line with a risk 2/10. Equity exposure for such a portfolio is therefore likely to range from 5%-35%."
+                  },
+                  {
+                    "paragraph": "For a timeframe of 10-14 years, a portfolio would be invested in line with a risk 3/10. Equity exposure for such a portfolio is therefore likely to range from 15%-45%."
+                  },
+                  {
+                    "paragraph": "For a timeframe of 15+ years, a portfolio would be invested in line with a risk 4/10. Equity exposure for such a portfolio is therefore likely to range from 25%-55%."
+                  }
+                ],
+                "imageurl": ""
+              },
+              {
+                "text": "Medium risk",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "People in this category are balanced in their attitude towards risk. They don’t seek risky investments but don’t avoid them either. They are prepared to accept fluctuations in the value of their investments to try and achieve better long-term returns. These portfolios will be subject to frequent and at times significant fluctuations in value."
+                  },
+                  {
+                    "paragraph": "Depending on the timeframe of a goal, the appropriate level of investment risk will differ, as follows (with 1/10 being lowest risk, and 10/10 being highest risk). Investments with a higher risk category will have more stocks and shares (equities) - equities have the opportunity for higher long-term returns, but potential for more ups and downs along the way."
+                  },
+                  {
+                    "paragraph": "For timeframes of 1-2 years, we recommend keeping money in cash."
+                  },
+                  {
+                    "paragraph": "For timeframes of 3-4 years, where money is coming from cash, we recommend keeping it in cash. Where money is coming from investments, a portfolio would be invested in line with a risk 5/10. Equity exposure for such a portfolio is therefore likely to range from 0-25%."
+                  },
+                  {
+                    "paragraph": "This means that for a timeframe of 3-9 years, a portfolio would be invested in line with a risk 5/10. Equity exposure for such a portfolio is therefore likely to range from 35%-65%."
+                  },
+                  {
+                    "paragraph": "For a timeframe of 10-14 years, a portfolio would be invested in line with a risk 6/10. Equity exposure for such a portfolio is therefore likely to range from 45%-75%."
+                  },
+                  {
+                    "paragraph": "For a timeframe of 15+ years, a portfolio would be invested in line with a risk 7/10. Equity exposure for such a portfolio is therefore likely to range from 55%-85%."
+                  }
+                ],
+                "imageurl": ""
+              },
+              {
+                "text": "Medium to High risk",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "People in this category are relatively comfortable with investment risk. They aim for higher long-term returns and understand that this can also mean some sustained periods of poorer performance. They are prepared to accept significant fluctuation in value to try and achieve better long-term returns."
+                  },
+                  {
+                    "paragraph": "Depending on the timeframe of a goal, the appropriate level of investment risk will differ, as follows (with 1/10 being lowest risk, and 10/10 being highest risk). Investments with a higher risk category will have more stocks and shares (equities) - equities have the opportunity for higher long-term returns, but potential for more ups and downs along the way."
+                  },
+                  {
+                    "paragraph": "For timeframes of 1-2 years, we recommend keeping money in cash."
+                  },
+                  {
+                    "paragraph": "For timeframes of 3-4 years, where money is coming from cash, we recommend keeping it in cash. Where money is coming from investments, a portfolio would be invested in line with a risk 7/10. Equity exposure for such a portfolio is therefore likely to range from 0-25%."
+                  },
+                  {
+                    "paragraph": "This means that for a timeframe of 5-9 years, a portfolio would be invested in line with a risk 7/10. Equity exposure for such a portfolio is therefore likely to range from 55%-85%."
+                  },
+                  {
+                    "paragraph": "For a timeframe of 10-14 years, a portfolio would be invested in line with a risk 8/10. Equity exposure for such a portfolio is therefore likely to range from 65%-95%."
+                  },
+                  {
+                    "paragraph": "For a timeframe of 15+ years, a portfolio would be invested in line with a risk 9/10. Equity exposure for such a portfolio is therefore likely to range from 75%-100%."
+                  }
+                ],
+                "imageurl": ""
+              },
+              {
+                "text": "High risk",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "People in this category are very comfortable with investment risk. They aim for high long-term investment returns and do not overly worry about periods of poorer performance in the short to medium term. Ordinarily, these portfolios can be subject to the full extent and frequency of stock market fluctuations."
+                  },
+                  {
+                    "paragraph": "Depending on the timeframe of a goal, the appropriate level of investment risk will differ, as follows (with 1/10 being lowest risk, and 10/10 being highest risk). Investments with a higher risk category will have more stocks and shares (equities) - equities have the opportunity for higher long-term returns, but potential for more ups and downs along the way."
+                  },
+                  {
+                    "paragraph": "For timeframes of 1-2 years, we recommend keeping money in cash."
+                  },
+                  {
+                    "paragraph": "For timeframes of 3-4 years, where money is coming from cash, we recommend keeping it in cash. Where money is coming from investments, a portfolio would be invested in line with a risk 8/10. Equity exposure for such a portfolio is therefore likely to range from 0-25%."
+                  },
+                  {
+                    "paragraph": "This means that for a timeframe of 5-9 years, a portfolio would be invested in line with a risk 8/10. Equity exposure for such a portfolio is therefore likely to range from 65%-95%."
+                  },
+                  {
+                    "paragraph": "For a timeframe of 10-14 years, a portfolio would be invested in line with a risk 9/10. Equity exposure for such a portfolio is therefore likely to range from 75%-100%."
+                  },
+                  {
+                    "paragraph": "For a timeframe of 15+ years, a portfolio would be invested in line with a risk 10/10. Equity exposure for such a portfolio is therefore likely to range from 85%-100%."
+                  }
+                ],
+                "imageurl": ""
+              }
+            ],
+            "client": [
+              {
+                "text": "* Low risk",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "* People in this category are conservative with their investments. They prefer taking a small amount of risk to achieve modest or relatively stable returns. They accept that there may be some short-term periods of fluctuation in value."
+                  },
+                  {
+                    "paragraph": "* Depending on the timeframe of a goal, the appropriate level of investment risk will differ, as follows (with 1/10 being lowest risk, and 10/10 being highest risk). Investments with a higher risk category will have more stocks and shares (equities) - equities have the opportunity for higher long-term returns, but potential for more ups and downs along the way."
+                  },
+                  {
+                    "paragraph": "* For timeframes of 1-2 years, we recommend keeping money in cash."
+                  },
+                  {
+                    "paragraph": "* For timeframes of 3-4 years, where money is coming from cash, we recommend keeping it in cash. Where money is coming from investments, a portfolio would be invested in line with a risk 1/10. Equity exposure for such a portfolio is therefore likely to range from 0-25%."
+                  },
+                  {
+                    "paragraph": "* For a timeframe of 5-14 years, a portfolio would be invested in line with a risk 1/10. Equity exposure for such a portfolio is therefore likely to range from 0%-25%."
+                  },
+                  {
+                    "paragraph": "* For a timeframe of 15+ years, a portfolio would be invested in line with a risk 2/10. Equity exposure for such a portfolio is therefore likely to range from 5%-35%."
+                  }
+                ],
+                "imageurl": ""
+              },
+              {
+                "text": "* Low to Medium risk",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "* People in this category are relatively cautious with their investments. They want to try to achieve a reasonable return and are prepared to accept some risk in doing so. Typically these portfolios will exhibit relatively modest yet frequent fluctuations in value."
+                  },
+                  {
+                    "paragraph": "* Depending on the timeframe of a goal, the appropriate level of investment risk will differ, as follows (with 1/10 being lowest risk, and 10/10 being highest risk). Investments with a higher risk category will have more stocks and shares (equities) - equities have the opportunity for higher long-term returns, but potential for more ups and downs along the way."
+                  },
+                  {
+                    "paragraph": "* For timeframes of 1-2 years, we recommend keeping money in cash."
+                  },
+                  {
+                    "paragraph": "* For timeframes of 3-4 years, where money is coming from cash, we recommend keeping it in cash. Where money is coming from investments, a portfolio would be invested in line with a risk 2/10. Equity exposure for such a portfolio is therefore likely to range from 0-25%."
+                  },
+                  {
+                    "paragraph": "* This means that for a timeframe of 5-9 years, a portfolio would be invested in line with a risk 2/10. Equity exposure for such a portfolio is therefore likely to range from 5%-35%."
+                  },
+                  {
+                    "paragraph": "* For a timeframe of 10-14 years, a portfolio would be invested in line with a risk 3/10. Equity exposure for such a portfolio is therefore likely to range from 15%-45%."
+                  },
+                  {
+                    "paragraph": "* For a timeframe of 15+ years, a portfolio would be invested in line with a risk 4/10. Equity exposure for such a portfolio is therefore likely to range from 25%-55%."
+                  }
+                ],
+                "imageurl": ""
+              },
+              {
+                "text": "* Medium risk",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "* People in this category are balanced in their attitude towards risk. They don’t seek risky investments but don’t avoid them either. They are prepared to accept fluctuations in the value of their investments to try and achieve better long-term returns. These portfolios will be subject to frequent and at times significant fluctuations in value."
+                  },
+                  {
+                    "paragraph": "* Depending on the timeframe of a goal, the appropriate level of investment risk will differ, as follows (with 1/10 being lowest risk, and 10/10 being highest risk). Investments with a higher risk category will have more stocks and shares (equities) - equities have the opportunity for higher long-term returns, but potential for more ups and downs along the way."
+                  },
+                  {
+                    "paragraph": "* For timeframes of 1-2 years, we recommend keeping money in cash."
+                  },
+                  {
+                    "paragraph": "* For timeframes of 3-4 years, where money is coming from cash, we recommend keeping it in cash. Where money is coming from investments, a portfolio would be invested in line with a risk 5/10. Equity exposure for such a portfolio is therefore likely to range from 0-25%."
+                  },
+                  {
+                    "paragraph": "* This means that for a timeframe of 3-9 years, a portfolio would be invested in line with a risk 5/10. Equity exposure for such a portfolio is therefore likely to range from 35%-65%."
+                  },
+                  {
+                    "paragraph": "* For a timeframe of 10-14 years, a portfolio would be invested in line with a risk 6/10. Equity exposure for such a portfolio is therefore likely to range from 45%-75%."
+                  },
+                  {
+                    "paragraph": "* For a timeframe of 15+ years, a portfolio would be invested in line with a risk 7/10. Equity exposure for such a portfolio is therefore likely to range from 55%-85%."
+                  }
+                ],
+                "imageurl": ""
+              },
+              {
+                "text": "* Medium to High risk",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "* People in this category are relatively comfortable with investment risk. They aim for higher long-term returns and understand that this can also mean some sustained periods of poorer performance. They are prepared to accept significant fluctuation in value to try and achieve better long-term returns."
+                  },
+                  {
+                    "paragraph": "* Depending on the timeframe of a goal, the appropriate level of investment risk will differ, as follows (with 1/10 being lowest risk, and 10/10 being highest risk). Investments with a higher risk category will have more stocks and shares (equities) - equities have the opportunity for higher long-term returns, but potential for more ups and downs along the way."
+                  },
+                  {
+                    "paragraph": "* For timeframes of 1-2 years, we recommend keeping money in cash."
+                  },
+                  {
+                    "paragraph": "* For timeframes of 3-4 years, where money is coming from cash, we recommend keeping it in cash. Where money is coming from investments, a portfolio would be invested in line with a risk 7/10. Equity exposure for such a portfolio is therefore likely to range from 0-25%."
+                  },
+                  {
+                    "paragraph": "* This means that for a timeframe of 5-9 years, a portfolio would be invested in line with a risk 7/10. Equity exposure for such a portfolio is therefore likely to range from 55%-85%."
+                  },
+                  {
+                    "paragraph": "* For a timeframe of 10-14 years, a portfolio would be invested in line with a risk 8/10. Equity exposure for such a portfolio is therefore likely to range from 65%-95%."
+                  },
+                  {
+                    "paragraph": "* For a timeframe of 15+ years, a portfolio would be invested in line with a risk 9/10. Equity exposure for such a portfolio is therefore likely to range from 75%-100%."
+                  }
+                ],
+                "imageurl": ""
+              },
+              {
+                "text": "* High risk",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "* People in this category are very comfortable with investment risk. They aim for high long-term investment returns and do not overly worry about periods of poorer performance in the short to medium term. Ordinarily, these portfolios can be subject to the full extent and frequency of stock market fluctuations."
+                  },
+                  {
+                    "paragraph": "* Depending on the timeframe of a goal, the appropriate level of investment risk will differ, as follows (with 1/10 being lowest risk, and 10/10 being highest risk). Investments with a higher risk category will have more stocks and shares (equities) - equities have the opportunity for higher long-term returns, but potential for more ups and downs along the way."
+                  },
+                  {
+                    "paragraph": "* For timeframes of 1-2 years, we recommend keeping money in cash."
+                  },
+                  {
+                    "paragraph": "* For timeframes of 3-4 years, where money is coming from cash, we recommend keeping it in cash. Where money is coming from investments, a portfolio would be invested in line with a risk 8/10. Equity exposure for such a portfolio is therefore likely to range from 0-25%."
+                  },
+                  {
+                    "paragraph": "* This means that for a timeframe of 5-9 years, a portfolio would be invested in line with a risk 8/10. Equity exposure for such a portfolio is therefore likely to range from 65%-95%."
+                  },
+                  {
+                    "paragraph": "* For a timeframe of 10-14 years, a portfolio would be invested in line with a risk 9/10. Equity exposure for such a portfolio is therefore likely to range from 75%-100%."
+                  },
+                  {
+                    "paragraph": "* For a timeframe of 15+ years, a portfolio would be invested in line with a risk 10/10. Equity exposure for such a portfolio is therefore likely to range from 85%-100%."
+                  }
+                ],
+                "imageurl": ""
+              }
+            ]
+          },
+          "riskCapacityHeaderText": {
+            "default": "Your risk capacity",
+            "client": "* Your risk capacity"
+          },
+          "riskCapacityCategories": {
+            "default": [
+              {
+                "text": "Low",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "You may not afford for the investments to not meet your objectives without significant consequences on your standard of living. It is unlikely that you would have other alternatives to turn to if faced with an immediate requirement for capital."
+                  }
+                ]
+              },
+              {
+                "text": "Medium",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "You may be able to afford some under-performance of the investment though substantial losses could affect your standards of living. It is likely that you will have other alternatives to turn to if faced with an immediate requirement for capital."
+                  }
+                ]
+              },
+              {
+                "text": "High",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "You can afford significant under-performance of the investment though substantial losses may still affect your standards of living. Yet it is likely you will have other alternatives to turn to if faced with an immediate requirement for capital."
+                  }
+                ]
+              }
+            ],
+            "client": [
+              {
+                "text": "* Low",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "* You may not afford for the investments to not meet your objectives without significant consequences on your standard of living. It is unlikely that you would have other alternatives to turn to if faced with an immediate requirement for capital."
+                  }
+                ]
+              },
+              {
+                "text": "* Medium",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "* You may be able to afford some under-performance of the investment though substantial losses could affect your standards of living. It is likely that you will have other alternatives to turn to if faced with an immediate requirement for capital."
+                  }
+                ]
+              },
+              {
+                "text": "* High",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "* You can afford significant under-performance of the investment though substantial losses may still affect your standards of living. Yet it is likely you will have other alternatives to turn to if faced with an immediate requirement for capital."
+                  }
+                ]
+              }
+            ]
+          },
+          "riskCategories": {
+            "default": {
+              "YEARS TO GOAL": {
+                "1": {
+                  "0": 0,
+                  "1": 0,
+                  "2": 0,
+                  "3": 0,
+                  "4": 0
+                },
+                "2": {
+                  "0": 0,
+                  "1": 0,
+                  "2": 0,
+                  "3": 0,
+                  "4": 0
+                },
+                "3": {
+                  "0": 1,
+                  "1": 2,
+                  "2": 5,
+                  "3": 7,
+                  "4": 8
+                },
+                "4": {
+                  "0": 1,
+                  "1": 2,
+                  "2": 5,
+                  "3": 7,
+                  "4": 8
+                },
+                "5": {
+                  "0": 1,
+                  "1": 2,
+                  "2": 5,
+                  "3": 7,
+                  "4": 8
+                },
+                "6": {
+                  "0": 1,
+                  "1": 2,
+                  "2": 5,
+                  "3": 7,
+                  "4": 8
+                },
+                "7": {
+                  "0": 1,
+                  "1": 2,
+                  "2": 5,
+                  "3": 7,
+                  "4": 8
+                },
+                "8": {
+                  "0": 1,
+                  "1": 2,
+                  "2": 5,
+                  "3": 7,
+                  "4": 8
+                },
+                "9": {
+                  "0": 1,
+                  "1": 2,
+                  "2": 5,
+                  "3": 7,
+                  "4": 8
+                },
+                "10": {
+                  "0": 1,
+                  "1": 3,
+                  "2": 6,
+                  "3": 8,
+                  "4": 9
+                },
+                "11": {
+                  "0": 1,
+                  "1": 3,
+                  "2": 6,
+                  "3": 8,
+                  "4": 9
+                },
+                "12": {
+                  "0": 1,
+                  "1": 3,
+                  "2": 6,
+                  "3": 8,
+                  "4": 9
+                },
+                "13": {
+                  "0": 1,
+                  "1": 3,
+                  "2": 6,
+                  "3": 8,
+                  "4": 9
+                },
+                "14": {
+                  "0": 1,
+                  "1": 3,
+                  "2": 6,
+                  "3": 8,
+                  "4": 9
+                },
+                "15": {
+                  "0": 2,
+                  "1": 4,
+                  "2": 7,
+                  "3": 9,
+                  "4": 10
+                }
+              }
+            },
+            "client": {
+              "YEARS TO GOAL": {
+                "1": {
+                  "0": 0,
+                  "1": 0,
+                  "2": 0,
+                  "3": 0,
+                  "4": 0
+                },
+                "2": {
+                  "0": 0,
+                  "1": 0,
+                  "2": 0,
+                  "3": 0,
+                  "4": 0
+                },
+                "3": {
+                  "0": 1,
+                  "1": 2,
+                  "2": 5,
+                  "3": 7,
+                  "4": 8
+                },
+                "4": {
+                  "0": 1,
+                  "1": 2,
+                  "2": 5,
+                  "3": 7,
+                  "4": 8
+                },
+                "5": {
+                  "0": 1,
+                  "1": 2,
+                  "2": 5,
+                  "3": 7,
+                  "4": 8
+                },
+                "6": {
+                  "0": 1,
+                  "1": 2,
+                  "2": 5,
+                  "3": 7,
+                  "4": 8
+                },
+                "7": {
+                  "0": 1,
+                  "1": 2,
+                  "2": 5,
+                  "3": 7,
+                  "4": 8
+                },
+                "8": {
+                  "0": 1,
+                  "1": 2,
+                  "2": 5,
+                  "3": 7,
+                  "4": 8
+                },
+                "9": {
+                  "0": 1,
+                  "1": 2,
+                  "2": 5,
+                  "3": 7,
+                  "4": 8
+                },
+                "10": {
+                  "0": 1,
+                  "1": 3,
+                  "2": 6,
+                  "3": 8,
+                  "4": 9
+                },
+                "11": {
+                  "0": 1,
+                  "1": 3,
+                  "2": 6,
+                  "3": 8,
+                  "4": 9
+                },
+                "12": {
+                  "0": 1,
+                  "1": 3,
+                  "2": 6,
+                  "3": 8,
+                  "4": 9
+                },
+                "13": {
+                  "0": 1,
+                  "1": 3,
+                  "2": 6,
+                  "3": 8,
+                  "4": 9
+                },
+                "14": {
+                  "0": 1,
+                  "1": 3,
+                  "2": 6,
+                  "3": 8,
+                  "4": 9
+                },
+                "15": {
+                  "0": 2,
+                  "1": 4,
+                  "2": 7,
+                  "3": 9,
+                  "4": 10
+                }
+              }
+            }
+          },
+          "investmentStrategy": {
+            "default": {
+              "Cash": {
+                "Fund Manager": null,
+                "Equity Content": null,
+                "Charges per annum": 0
+              },
+              "Passive": {
+                "riskCategory": {
+                  "1": {
+                    "provider": "Aviva",
+                    "investment": "Vanguard LifeStrategy 20% Equity fund",
+                    "fundManager": "Vanguard Lifestrategy",
+                    "Equity Content": 0.2,
+                    "Charges per annum": 0.0022
+                  },
+                  "2": {
+                    "provider": "Aviva",
+                    "investment": "BlackRock MyMap 3 fund",
+                    "Fund Manager": "BlackRock MyMap",
+                    "Equity Content": 0.27,
+                    "Charges per annum": 0.0017
+                  },
+                  "3": {
+                    "provider": "Aviva",
+                    "investment": "BlackRock MyMap 3 fund",
+                    "Fund Manager": "BlackRock MyMap",
+                    "Equity Content": 0.27,
+                    "Charges per annum": 0.0017
+                  },
+                  "4": {
+                    "provider": "Aviva",
+                    "investment": "BlackRock MyMap 4 fund",
+                    "Fund Manager": "BlackRock MyMap",
+                    "Equity Content": 0.47,
+                    "Charges per annum": 0.0017
+                  },
+                  "5": {
+                    "provider": "Aviva",
+                    "investment": "BlackRock MyMap 4 fund",
+                    "Fund Manager": "BlackRock MyMap",
+                    "Equity Content": 0.47,
+                    "Charges per annum": 0.0017
+                  },
+                  "6": {
+                    "provider": "Aviva",
+                    "investment": "BlackRock MyMap 5 fund",
+                    "Fund Manager": "BlackRock MyMap",
+                    "Equity Content": 0.64,
+                    "Charges per annum": 0.0017
+                  },
+                  "7": {
+                    "provider": "Aviva",
+                    "investment": "BlackRock MyMap 5 fund",
+                    "Fund Manager": "BlackRock MyMap",
+                    "Equity Content": 0.64,
+                    "Charges per annum": 0.0017
+                  },
+                  "8": {
+                    "provider": "Aviva",
+                    "investment": "BlackRock MyMap 6 fund",
+                    "Fund Manager": "BlackRock MyMap",
+                    "Equity Content": 0.8,
+                    "Charges per annum": 0.0017
+                  },
+                  "9": {
+                    "provider": "Aviva",
+                    "investment": "BlackRock MyMap 6 fund",
+                    "Fund Manager": "BlackRock MyMap",
+                    "Equity Content": 0.8,
+                    "Charges per annum": 0.0017
+                  },
+                  "10": {
+                    "provider": "Aviva",
+                    "investment": "Vanguard LifeStrategy 100% Equity fund",
+                    "Fund Manager": "Vanguard LifeStrategy",
+                    "Equity Content": 1,
+                    "Charges per annum": 0.0022
+                  }
+                }
+              },
+              "Income": {
+                "riskCategory": {
+                  "1": {
+                    "provider": "Aviva",
+                    "investment": "Tatton Global Core Defensive portfolio",
+                    "Fund Manager": "Tatton Global Core",
+                    "Equity Content": 0.25,
+                    "Charges per annum": 0.0047
+                  },
+                  "2": {
+                    "provider": "Aviva",
+                    "investment": "Tatton Global Core Defensive portfolio",
+                    "Fund Manager": "Tatton Global Core",
+                    "Equity Content": 0.25,
+                    "Charges per annum": 0.0047
+                  },
+                  "3": {
+                    "provider": "Aviva",
+                    "investment": "Tatton Global Core Defensive portfolio",
+                    "Fund Manager": "Tatton Global Core",
+                    "Equity Content": 0.25,
+                    "Charges per annum": 0.0047
+                  },
+                  "4": {
+                    "provider": "Aviva",
+                    "investment": "Tatton Global Core Cautious portfolio",
+                    "Fund Manager": "Tatton Global Core",
+                    "Equity Content": 0.45,
+                    "Charges per annum": 0.0049
+                  },
+                  "5": {
+                    "provider": "Aviva",
+                    "investment": "Tatton Global Core Balanced portfolio",
+                    "Fund Manager": "Tatton Global Core",
+                    "Equity Content": 0.6,
+                    "Charges per annum": 0.0051
+                  },
+                  "6": {
+                    "provider": "Aviva",
+                    "investment": "Tatton Global Core Balanced portfolio",
+                    "Fund Manager": "Tatton Global Core",
+                    "Equity Content": 0.6,
+                    "Charges per annum": 0.0051
+                  },
+                  "7": {
+                    "provider": "Aviva",
+                    "investment": "Tatton Global Core Active portfolio",
+                    "Fund Manager": "Tatton Global Core",
+                    "Equity Content": 0.75,
+                    "Charges per annum": 0.0052
+                  },
+                  "8": {
+                    "provider": "Aviva",
+                    "investment": "Tatton Global Core Active portfolio",
+                    "Fund Manager": "Tatton Global Core",
+                    "Equity Content": 0.75,
+                    "Charges per annum": 0.0052
+                  },
+                  "9": {
+                    "provider": "Aviva",
+                    "investment": "Tatton Global Core Aggressive portfolio",
+                    "Fund Manager": "Tatton Global Core",
+                    "Equity Content": 0.9,
+                    "Charges per annum": 0.0048
+                  },
+                  "10": {
+                    "provider": "Aviva",
+                    "investment": "Tatton Global Core Equity portfolio",
+                    "Fund Manager": "Tatton Global Core",
+                    "Equity Content": 0.98,
+                    "Charges per annum": 0.0048
+                  }
+                }
+              },
+              "Ethical": {
+                "riskCategory": {
+                  "1": {
+                    "provider": "Aviva",
+                    "investment": "EQ Future Leaders Defensive portfolio",
+                    "Fund Manager": "EQ Future Leaders",
+                    "Equity Content": 0.3,
+                    "Charges per annum": 0.0044
+                  },
+                  "2": {
+                    "provider": "Aviva",
+                    "investment": "EQ Future Leaders Defensive portfolio",
+                    "Fund Manager": "EQ Future Leaders",
+                    "Equity Content": 0.3,
+                    "Charges per annum": 0.0044
+                  },
+                  "3": {
+                    "provider": "Aviva",
+                    "investment": "EQ Future Leaders Defensive portfolio",
+                    "Fund Manager": "EQ Future Leaders",
+                    "Equity Content": 0.3,
+                    "Charges per annum": 0.0044
+                  },
+                  "4": {
+                    "provider": "Aviva",
+                    "investment": "EQ Future Leaders Cautious portfolio",
+                    "Fund Manager": "EQ Future Leaders",
+                    "Equity Content": 0.4,
+                    "Charges per annum": 0.0045
+                  },
+                  "5": {
+                    "provider": "Aviva",
+                    "investment": "BlackRock MyMap 5 ESG fund",
+                    "Fund Manager": "BlackRock MyMap ESG",
+                    "Equity Content": 0.64,
+                    "Charges per annum": 0.0017
+                  },
+                  "6": {
+                    "provider": "Aviva",
+                    "investment": "BlackRock MyMap 5 ESG fund",
+                    "Fund Manager": "BlackRock MyMap ESG",
+                    "Equity Content": 0.64,
+                    "Charges per annum": 0.0017
+                  },
+                  "7": {
+                    "provider": "Aviva",
+                    "investment": "BlackRock MyMap 5 ESG fund",
+                    "Fund Manager": "BlackRock MyMap ESG",
+                    "Equity Content": 0.64,
+                    "Charges per annum": 0.0017
+                  },
+                  "8": {
+                    "provider": "Aviva",
+                    "investment": "EQ Future Leaders Balanced Plus portfolio",
+                    "Fund Manager": "EQ Future Leaders",
+                    "Equity Content": 0.7,
+                    "Charges per annum": 0.0049
+                  },
+                  "9": {
+                    "provider": "Aviva",
+                    "investment": "EQ Future Leaders Adventurous portfolio",
+                    "Fund Manager": "EQ Future Leaders",
+                    "Equity Content": 0.82,
+                    "Charges per annum": 0.005
+                  },
+                  "10": {
+                    "provider": "Aviva",
+                    "investment": "EQ Future Leaders Adventurous Plus portfolio",
+                    "Fund Manager": "EQ Future Leaders",
+                    "Equity Content": 0.93,
+                    "Charges per annum": 0.0051
+                  }
+                }
+              },
+              "DFM": {
+                "riskCategory": {
+                  "1": {
+                    "provider": {
+                      "pension": "Curtis Banks",
+                      "investment": "Cazenove"
+                    },
+                    "investment": "Cazenove Discretionary Fund Management bespoke portfolio",
+                    "Fund Manager": "Cazenove Discretionary Fund Management",
+                    "Equity Content": "as shown in your investment proposal",
+                    "Charges per annum": null
+                  },
+                  "2": {
+                    "provider": {
+                      "pension": "Curtis Banks",
+                      "investment": "Cazenove"
+                    },
+                    "investment": "Cazenove Discretionary Fund Management bespoke portfolio",
+                    "Fund Manager": "Cazenove Discretionary Fund Management",
+                    "Equity Content": "as shown in your investment proposal",
+                    "Charges per annum": null
+                  },
+                  "3": {
+                    "provider": {
+                      "pension": "Curtis Banks",
+                      "investment": "Cazenove"
+                    },
+                    "investment": "Cazenove Discretionary Fund Management bespoke portfolio",
+                    "Fund Manager": "Cazenove Discretionary Fund Management",
+                    "Equity Content": "as shown in your investment proposal",
+                    "Charges per annum": null
+                  },
+                  "4": {
+                    "provider": {
+                      "pension": "Curtis Banks",
+                      "investment": "Cazenove"
+                    },
+                    "investment": "Cazenove Discretionary Fund Management bespoke portfolio",
+                    "Fund Manager": "Cazenove Discretionary Fund Management",
+                    "Equity Content": "as shown in your investment proposal",
+                    "Charges per annum": null
+                  },
+                  "5": {
+                    "provider": {
+                      "pension": "Curtis Banks",
+                      "investment": "Cazenove"
+                    },
+                    "investment": "Cazenove Discretionary Fund Management bespoke portfolio",
+                    "Fund Manager": "Cazenove Discretionary Fund Management",
+                    "Equity Content": "as shown in your investment proposal",
+                    "Charges per annum": null
+                  },
+                  "6": {
+                    "provider": {
+                      "pension": "Curtis Banks",
+                      "investment": "Cazenove"
+                    },
+                    "investment": "Cazenove Discretionary Fund Management bespoke portfolio",
+                    "Fund Manager": "Cazenove Discretionary Fund Management",
+                    "Equity Content": "as shown in your investment proposal",
+                    "Charges per annum": null
+                  },
+                  "7": {
+                    "provider": {
+                      "pension": "Curtis Banks",
+                      "investment": "Cazenove"
+                    },
+                    "investment": "Cazenove Discretionary Fund Management bespoke portfolio",
+                    "Fund Manager": "Cazenove Discretionary Fund Management",
+                    "Equity Content": "as shown in your investment proposal",
+                    "Charges per annum": null
+                  },
+                  "8": {
+                    "provider": {
+                      "pension": "Curtis Banks",
+                      "investment": "Cazenove"
+                    },
+                    "investment": "Cazenove Discretionary Fund Management bespoke portfolio",
+                    "Fund Manager": "Cazenove Discretionary Fund Management",
+                    "Equity Content": "as shown in your investment proposal",
+                    "Charges per annum": null
+                  },
+                  "9": {
+                    "provider": {
+                      "pension": "Curtis Banks",
+                      "investment": "Cazenove"
+                    },
+                    "investment": "Cazenove Discretionary Fund Management bespoke portfolio",
+                    "Fund Manager": "Cazenove Discretionary Fund Management",
+                    "Equity Content": "as shown in your investment proposal",
+                    "Charges per annum": null
+                  },
+                  "10": {
+                    "provider": {
+                      "pension": "Curtis Banks",
+                      "investment": "Cazenove"
+                    },
+                    "investment": "Cazenove Discretionary Fund Management bespoke portfolio",
+                    "Fund Manager": "Cazenove Discretionary Fund Management",
+                    "Equity Content": "as shown in your investment proposal",
+                    "Charges per annum": null
+                  }
+                }
+              }
+            },
+            "client": {
+              "Cash": {
+                "Fund Manager": null,
+                "Equity Content": null,
+                "Charges per annum": 0
+              },
+              "Passive": {
+                "riskCategory": {
+                  "1": {
+                    "provider": "* Aviva",
+                    "investment": "* Vanguard LifeStrategy 20% Equity fund",
+                    "fundManager": "* Vanguard Lifestrategy",
+                    "Equity Content": 0.2,
+                    "Charges per annum": 0.0022
+                  },
+                  "2": {
+                    "provider": "* Aviva",
+                    "investment": "* BlackRock MyMap 3 fund",
+                    "Fund Manager": "* BlackRock MyMap",
+                    "Equity Content": 0.27,
+                    "Charges per annum": 0.0017
+                  },
+                  "3": {
+                    "provider": "* Aviva",
+                    "investment": "* BlackRock MyMap 3 fund",
+                    "Fund Manager": "* BlackRock MyMap",
+                    "Equity Content": 0.27,
+                    "Charges per annum": 0.0017
+                  },
+                  "4": {
+                    "provider": "* Aviva",
+                    "investment": "* BlackRock MyMap 4 fund",
+                    "Fund Manager": "* BlackRock MyMap",
+                    "Equity Content": 0.47,
+                    "Charges per annum": 0.0017
+                  },
+                  "5": {
+                    "provider": "* Aviva",
+                    "investment": "* BlackRock MyMap 4 fund",
+                    "Fund Manager": "* BlackRock MyMap",
+                    "Equity Content": 0.47,
+                    "Charges per annum": 0.0017
+                  },
+                  "6": {
+                    "provider": "* Aviva",
+                    "investment": "* BlackRock MyMap 5 fund",
+                    "Fund Manager": "* BlackRock MyMap",
+                    "Equity Content": 0.64,
+                    "Charges per annum": 0.0017
+                  },
+                  "7": {
+                    "provider": "* Aviva",
+                    "investment": "* BlackRock MyMap 5 fund",
+                    "Fund Manager": "* BlackRock MyMap",
+                    "Equity Content": 0.64,
+                    "Charges per annum": 0.0017
+                  },
+                  "8": {
+                    "provider": "* Aviva",
+                    "investment": "* BlackRock MyMap 6 fund",
+                    "Fund Manager": "* BlackRock MyMap",
+                    "Equity Content": 0.8,
+                    "Charges per annum": 0.0017
+                  },
+                  "9": {
+                    "provider": "* Aviva",
+                    "investment": "* BlackRock MyMap 6 fund",
+                    "Fund Manager": "* BlackRock MyMap",
+                    "Equity Content": 0.8,
+                    "Charges per annum": 0.0017
+                  },
+                  "10": {
+                    "provider": "* Aviva",
+                    "investment": "* Vanguard LifeStrategy 100% Equity fund",
+                    "Fund Manager": "* Vanguard LifeStrategy",
+                    "Equity Content": 1,
+                    "Charges per annum": 0.0022
+                  }
+                }
+              },
+              "Income": {
+                "riskCategory": {
+                  "1": {
+                    "provider": "* Aviva",
+                    "investment": "* Tatton Global Core Defensive portfolio",
+                    "Fund Manager": "* Tatton Global Core",
+                    "Equity Content": 0.25,
+                    "Charges per annum": 0.0047
+                  },
+                  "2": {
+                    "provider": "* Aviva",
+                    "investment": "* Tatton Global Core Defensive portfolio",
+                    "Fund Manager": "* Tatton Global Core",
+                    "Equity Content": 0.25,
+                    "Charges per annum": 0.0047
+                  },
+                  "3": {
+                    "provider": "* Aviva",
+                    "investment": "* Tatton Global Core Defensive portfolio",
+                    "Fund Manager": "* Tatton Global Core",
+                    "Equity Content": 0.25,
+                    "Charges per annum": 0.0047
+                  },
+                  "4": {
+                    "provider": "* Aviva",
+                    "investment": "* Tatton Global Core Cautious portfolio",
+                    "Fund Manager": "* Tatton Global Core",
+                    "Equity Content": 0.45,
+                    "Charges per annum": 0.0049
+                  },
+                  "5": {
+                    "provider": "* Aviva",
+                    "investment": "* Tatton Global Core Balanced portfolio",
+                    "Fund Manager": "* Tatton Global Core",
+                    "Equity Content": 0.6,
+                    "Charges per annum": 0.0051
+                  },
+                  "6": {
+                    "provider": "* Aviva",
+                    "investment": "* Tatton Global Core Balanced portfolio",
+                    "Fund Manager": "* Tatton Global Core",
+                    "Equity Content": 0.6,
+                    "Charges per annum": 0.0051
+                  },
+                  "7": {
+                    "provider": "* Aviva",
+                    "investment": "* Tatton Global Core Active portfolio",
+                    "Fund Manager": "* Tatton Global Core",
+                    "Equity Content": 0.75,
+                    "Charges per annum": 0.0052
+                  },
+                  "8": {
+                    "provider": "* Aviva",
+                    "investment": "* Tatton Global Core Active portfolio",
+                    "Fund Manager": "* Tatton Global Core",
+                    "Equity Content": 0.75,
+                    "Charges per annum": 0.0052
+                  },
+                  "9": {
+                    "provider": "* Aviva",
+                    "investment": "* Tatton Global Core Aggressive portfolio",
+                    "Fund Manager": "* Tatton Global Core",
+                    "Equity Content": 0.9,
+                    "Charges per annum": 0.0048
+                  },
+                  "10": {
+                    "provider": "* Aviva",
+                    "investment": "* Tatton Global Core Equity portfolio",
+                    "Fund Manager": "* Tatton Global Core",
+                    "Equity Content": 0.98,
+                    "Charges per annum": 0.0048
+                  }
+                }
+              },
+              "Ethical": {
+                "riskCategory": {
+                  "1": {
+                    "provider": "* Aviva",
+                    "investment": "* EQ Future Leaders Defensive portfolio",
+                    "Fund Manager": "* EQ Future Leaders",
+                    "Equity Content": 0.3,
+                    "Charges per annum": 0.0044
+                  },
+                  "2": {
+                    "provider": "* Aviva",
+                    "investment": "* EQ Future Leaders Defensive portfolio",
+                    "Fund Manager": "* EQ Future Leaders",
+                    "Equity Content": 0.3,
+                    "Charges per annum": 0.0044
+                  },
+                  "3": {
+                    "provider": "* Aviva",
+                    "investment": "* EQ Future Leaders Defensive portfolio",
+                    "Fund Manager": "* EQ Future Leaders",
+                    "Equity Content": 0.3,
+                    "Charges per annum": 0.0044
+                  },
+                  "4": {
+                    "provider": "* Aviva",
+                    "investment": "* EQ Future Leaders Cautious portfolio",
+                    "Fund Manager": "* EQ Future Leaders",
+                    "Equity Content": 0.4,
+                    "Charges per annum": 0.0045
+                  },
+                  "5": {
+                    "provider": "* Aviva",
+                    "investment": "* BlackRock MyMap 5 ESG fund",
+                    "Fund Manager": "* BlackRock MyMap ESG",
+                    "Equity Content": 0.64,
+                    "Charges per annum": 0.0017
+                  },
+                  "6": {
+                    "provider": "* Aviva",
+                    "investment": "* BlackRock MyMap 5 ESG fund",
+                    "Fund Manager": "* BlackRock MyMap ESG",
+                    "Equity Content": 0.64,
+                    "Charges per annum": 0.0017
+                  },
+                  "7": {
+                    "provider": "* Aviva",
+                    "investment": "* BlackRock MyMap 5 ESG fund",
+                    "Fund Manager": "* BlackRock MyMap ESG",
+                    "Equity Content": 0.64,
+                    "Charges per annum": 0.0017
+                  },
+                  "8": {
+                    "provider": "* Aviva",
+                    "investment": "* EQ Future Leaders Balanced Plus portfolio",
+                    "Fund Manager": "* EQ Future Leaders",
+                    "Equity Content": 0.7,
+                    "Charges per annum": 0.0049
+                  },
+                  "9": {
+                    "provider": "* Aviva",
+                    "investment": "* EQ Future Leaders Adventurous portfolio",
+                    "Fund Manager": "* EQ Future Leaders",
+                    "Equity Content": 0.82,
+                    "Charges per annum": 0.005
+                  },
+                  "10": {
+                    "provider": "* Aviva",
+                    "investment": "* EQ Future Leaders Adventurous Plus portfolio",
+                    "Fund Manager": "* EQ Future Leaders",
+                    "Equity Content": 0.93,
+                    "Charges per annum": 0.0051
+                  }
+                }
+              },
+              "DFM": {
+                "riskCategory": {
+                  "1": {
+                    "provider": {
+                      "pension": "* Curtis Banks",
+                      "investment": "* Cazenove"
+                    },
+                    "investment": "* Cazenove Discretionary Fund Management bespoke portfolio",
+                    "Fund Manager": "* Cazenove Discretionary Fund Management",
+                    "Equity Content": "* as shown in your investment proposal",
+                    "Charges per annum": null
+                  },
+                  "2": {
+                    "provider": {
+                      "pension": "* Curtis Banks",
+                      "investment": "* Cazenove"
+                    },
+                    "investment": "* Cazenove Discretionary Fund Management bespoke portfolio",
+                    "Fund Manager": "* Cazenove Discretionary Fund Management",
+                    "Equity Content": "* as shown in your investment proposal",
+                    "Charges per annum": null
+                  },
+                  "3": {
+                    "provider": {
+                      "pension": "* Curtis Banks",
+                      "investment": "* Cazenove"
+                    },
+                    "investment": "* Cazenove Discretionary Fund Management bespoke portfolio",
+                    "Fund Manager": "* Cazenove Discretionary Fund Management",
+                    "Equity Content": "* as shown in your investment proposal",
+                    "Charges per annum": null
+                  },
+                  "4": {
+                    "provider": {
+                      "pension": "* Curtis Banks",
+                      "investment": "* Cazenove"
+                    },
+                    "investment": "* Cazenove Discretionary Fund Management bespoke portfolio",
+                    "Fund Manager": "* Cazenove Discretionary Fund Management",
+                    "Equity Content": "* as shown in your investment proposal",
+                    "Charges per annum": null
+                  },
+                  "5": {
+                    "provider": {
+                      "pension": "* Curtis Banks",
+                      "investment": "* Cazenove"
+                    },
+                    "investment": "* Cazenove Discretionary Fund Management bespoke portfolio",
+                    "Fund Manager": "* Cazenove Discretionary Fund Management",
+                    "Equity Content": "* as shown in your investment proposal",
+                    "Charges per annum": null
+                  },
+                  "6": {
+                    "provider": {
+                      "pension": "* Curtis Banks",
+                      "investment": "* Cazenove"
+                    },
+                    "investment": "* Cazenove Discretionary Fund Management bespoke portfolio",
+                    "Fund Manager": "* Cazenove Discretionary Fund Management",
+                    "Equity Content": "* as shown in your investment proposal",
+                    "Charges per annum": null
+                  },
+                  "7": {
+                    "provider": {
+                      "pension": "* Curtis Banks",
+                      "investment": "* Cazenove"
+                    },
+                    "investment": "* Cazenove Discretionary Fund Management bespoke portfolio",
+                    "Fund Manager": "* Cazenove Discretionary Fund Management",
+                    "Equity Content": "* as shown in your investment proposal",
+                    "Charges per annum": null
+                  },
+                  "8": {
+                    "provider": {
+                      "pension": "* Curtis Banks",
+                      "investment": "* Cazenove"
+                    },
+                    "investment": "* Cazenove Discretionary Fund Management bespoke portfolio",
+                    "Fund Manager": "* Cazenove Discretionary Fund Management",
+                    "Equity Content": "* as shown in your investment proposal",
+                    "Charges per annum": null
+                  },
+                  "9": {
+                    "provider": {
+                      "pension": "* Curtis Banks",
+                      "investment": "* Cazenove"
+                    },
+                    "investment": "* Cazenove Discretionary Fund Management bespoke portfolio",
+                    "Fund Manager": "* Cazenove Discretionary Fund Management",
+                    "Equity Content": "* as shown in your investment proposal",
+                    "Charges per annum": null
+                  },
+                  "10": {
+                    "provider": {
+                      "pension": "* Curtis Banks",
+                      "investment": "* Cazenove"
+                    },
+                    "investment": "* Cazenove Discretionary Fund Management bespoke portfolio",
+                    "Fund Manager": "* Cazenove Discretionary Fund Management",
+                    "Equity Content": "* as shown in your investment proposal",
+                    "Charges per annum": null
+                  }
+                }
+              }
+            }
+          },
+          "investmentSolutionParagraphs": {
+            "default": [
+              {
+                "text": "Vanguard LifeStrategy",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "Vanguard is one of the largest asset managers in the world with approximately $6.2 trillion in global assets under management. It was a pioneer in the creation of low cost passive index funds to retail investors. The Vanguard LifeStrategy funds range has proven to be very popular with customers over the past decade. In addtion to offering a low cost (0.22% per annum) investment solution, we value Vanguard's high quality strategic asset allocation, global diversification and continuous rebalancing."
+                  }
+                ]
+              },
+              {
+                "text": "BlackRock MyMap",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "BlackRock is the largest asset management company worldwide with managed assets amounting to $7.43 trillion. The BlackRock MyMap funds are a range of multi-asset funds. They’re made up of a portfolio of passive ‘Exchange Traded Funds’ (ETFs), diversified over a wide range of geographies and asset classes. Due to its size, BlackRock can keep the costs extremely competitive, so you get global diversification at only 0.17% per year. In addition to offering a low cost investment solution, we value BlackRock's high quality strategic asset allocation, global diversification and continuous rebalancing."
+                  }
+                ]
+              },
+              {
+                "text": "Tatton Global Core",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "Tatton Investment Management was launched in 2013 and today they rank among the fastest growing investment managers in the UK. Tatton are the largest model portfolio provider with £7.8 billion of assets under management, as at September 2020. They were awarded ‘Best Investment Product Provider 2017’ at the Wealth Adviser Awards, and hold a 5 star rating by Defaqto."
+                  },
+                  {
+                    "paragraph": "As well as the benefits of experience and size, Tatton are also one of the lowest cost model portfolio providers in the market.  We've been impressed by their performance, and particularly recommend their Global Core range because of the wide global diversification and ability to actively spot market opportunities."
+                  }
+                ]
+              },
+              {
+                "text": "EQ Future Leaders",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "EQ Investors is a London based, award winning asset management business focused on sustainable investing. EQ's Future Leaders global model portfolios are the first range of passive, multi-asset, sustainable portfolios available in the UK.  Future Leaders portfolios select the most ethically minded and sustainable companies based on published Environmental, Social and Governance (‘ESG’) data.  They also use thematic funds to provide an overweight to sustainable sectors (ie, clean energy, healthcare and green bonds).  All this means that Future Leaders portfolios have a lower carbon footprint than market benchmarks.  The EQ Future Leaders portfolios offer a low cost, sustainable (green) impact investment solution with a strong track record in ESG."
+                  }
+                ]
+              },
+              {
+                "text": "Cazenove Discretionary Fund Management",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "Cazenove Capital’s dedicated Discretionary Fund Management team (DFM) are supported by the depth of investment resource of the Schroder Group, which is one of the largest wealth managers in the UK (managing £67.5 billion of assets worldwide). We work closely with Cazenove to tailor and manage a portfolio to suit your risk profile and financial life goals."
+                  },
+                  {
+                    "paragraph": "Cazenove Capital has four risk categories below, which serve as starting points, and which are then tailored for each individual client."
+                  },
+                  {
+                    "paragraph": "The categories are Cautious, Balanced, Growth and Aggressive."
+                  },
+                  {
+                    "paragraph": "The manager selection team conduct in-depth research with fund managers, testing not only that their views are consistent with their own, but that the structure of their funds appropriately reflect their stated strategies."
+                  },
+                  {
+                    "paragraph": "Portfolios are constantly reviewed and altered as appropriate to keep them aligned with developing market conditions and client objectives."
+                  },
+                  {
+                    "paragraph": "Cazenove Capital can access a wide range of asset classes including ‘alternatives’ such as absolute return funds (including hedge funds) and structured products.  The DFM offering has consistently delivered above average performance over 3, 5 and 7 years and due to our relationship with Cazenove Capital our customers can gain access at a reduced cost."
+                  },
+                  {
+                    "paragraph": "Based on their strong performance, excellent reporting and client-centric approach, we recommend Cazenove Capital DFM for your investment solution."
+                  }
+                ]
+              }
+            ],
+            "client": [
+              {
+                "text": "* BlackRock MyMap",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "* BlackRock is the largest asset management company worldwide with managed assets amounting to $7.43 trillion. The BlackRock MyMap funds are a range of multi-asset funds. They’re made up of a portfolio of passive ‘Exchange Traded Funds’ (ETFs), diversified over a wide range of geographies and asset classes. Due to its size, BlackRock can keep the costs extremely competitive, so you get global diversification at only 0.17% per year. In addition to offering a low cost investment solution, we value BlackRock's high quality strategic asset allocation, global diversification and continuous rebalancing."
+                  }
+                ]
+              },
+              {
+                "text": "* Tatton Global Core",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "* Tatton Investment Management was launched in 2013 and today they rank among the fastest growing investment managers in the UK. Tatton are the largest model portfolio provider with £7.8 billion of assets under management, as at September 2020. They were awarded ‘Best Investment Product Provider 2017’ at the Wealth Adviser Awards, and hold a 5 star rating by Defaqto."
+                  },
+                  {
+                    "paragraph": "* As well as the benefits of experience and size, Tatton are also one of the lowest cost model portfolio providers in the market.  We've been impressed by their performance, and particularly recommend their Global Core range because of the wide global diversification and ability to actively spot market opportunities."
+                  }
+                ]
+              },
+              {
+                "text": "* EQ Future Leaders",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "* EQ Investors is a London based, award winning asset management business focused on sustainable investing. EQ's Future Leaders global model portfolios are the first range of passive, multi-asset, sustainable portfolios available in the UK.  Future Leaders portfolios select the most ethically minded and sustainable companies based on published Environmental, Social and Governance (‘ESG’) data.  They also use thematic funds to provide an overweight to sustainable sectors (ie, clean energy, healthcare and green bonds).  All this means that Future Leaders portfolios have a lower carbon footprint than market benchmarks.  The EQ Future Leaders portfolios offer a low cost, sustainable (green) impact investment solution with a strong track record in ESG."
+                  }
+                ]
+              },
+              {
+                "text": "* Cazenove Discretionary Fund Management",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "* Cazenove Capital’s dedicated Discretionary Fund Management team (DFM) are supported by the depth of investment resource of the Schroder Group, which is one of the largest wealth managers in the UK (managing £67.5 billion of assets worldwide). We work closely with Cazenove to tailor and manage a portfolio to suit your risk profile and financial life goals."
+                  },
+                  {
+                    "paragraph": "* Cazenove Capital has four risk categories below, which serve as starting points, and which are then tailored for each individual client."
+                  },
+                  {
+                    "paragraph": "* The categories are Cautious, Balanced, Growth and Aggressive."
+                  },
+                  {
+                    "paragraph": "* The manager selection team conduct in-depth research with fund managers, testing not only that their views are consistent with their own, but that the structure of their funds appropriately reflect their stated strategies."
+                  },
+                  {
+                    "paragraph": "* Portfolios are constantly reviewed and altered as appropriate to keep them aligned with developing market conditions and client objectives."
+                  },
+                  {
+                    "paragraph": "* Cazenove Capital can access a wide range of asset classes including ‘alternatives’ such as absolute return funds (including hedge funds) and structured products.  The DFM offering has consistently delivered above average performance over 3, 5 and 7 years and due to our relationship with Cazenove Capital our customers can gain access at a reduced cost."
+                  },
+                  {
+                    "paragraph": "* Based on their strong performance, excellent reporting and client-centric approach, we recommend Cazenove Capital DFM for your investment solution."
+                  }
+                ]
+              }
+            ]
+          },
+          "providerParagraphs": {
+            "default": [
+              {
+                "text": "Aviva",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "We’ve looked at the whole of the market, and recommend Aviva to you because we think it has the best combination of value for money, clear reporting, customer friendly online portal, and financial strength."
+                  },
+                  {
+                    "paragraph": "Clients can also hold a number of different tax wrappers with Aviva (e.g. pension, ISA, Investment Portfolio), and see them all in the same place. This makes it easier for us and you to plan around your goals, and see how you’re progressing."
+                  }
+                ]
+              },
+              {
+                "text": "Curtis Banks",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "We’ve looked at the whole of the market, and recommend the Future SIPP (Self Invested Personal Pension) with Curtis Banks to you because we think it has the best combination of value for money, clear reporting, customer friendly online portal, and financial strength, while enabling you to invest in our recommended Dicretionary Fund Management solution (see below).   There are no set-up fees, and you will get online access to be able to view your pension online. Curtis Banks has years of experience administering self-invested personal pensions. They look after the pensions of over 76,300 clients with a value in excess of £28.6 billion."
+                  }
+                ]
+              },
+              {
+                "text": "Cazenove",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "You are able to hold ISAs and GIAs directly with Cazenove, investing in their Discretionary Fund Management solution.  This means that, where appropriate, we can easily move monies from a GIA into an ISA to utilise your ISA allowance, and within GIAs can manage the portfolio to utilise your CGT allowance on an ongoing basis (to reduce your overall CGT liability)."
+                  }
+                ]
+              }
+            ],
+            "client": [
+              {
+                "text": "* Aviva",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "* We’ve looked at the whole of the market, and recommend Aviva to you because we think it has the best combination of value for money, clear reporting, customer friendly online portal, and financial strength."
+                  },
+                  {
+                    "paragraph": "* Clients can also hold a number of different tax wrappers with Aviva (e.g. pension, ISA, Investment Portfolio), and see them all in the same place. This makes it easier for us and you to plan around your goals, and see how you’re progressing."
+                  }
+                ]
+              },
+              {
+                "text": "* Curtis Banks",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "* We've looked at the whole of the market, and recommend the Future SIPP (Self Invested Personal Pension) with Curtis Banks to you because we think it has the best combination of value for money, clear reporting, customer friendly online portal, and financial strength, while enabling you to invest in our recommended Dicretionary Fund Management solution (see below).   There are no set-up fees, and you will get online access to be able to view your pension online. Curtis Banks has years of experience administering self-invested personal pensions. They look after the pensions of over 76,300 clients with a value in excess of £28.6 billion."
+                  }
+                ]
+              },
+              {
+                "text": "* Cazenove",
+                "reportParagraphs": [
+                  {
+                    "paragraph": "* You are able to hold ISAs and GIAs directly with Cazenove, investing in their Discretionary Fund Management solution.  This means that, where appropriate, we can easily move monies from a GIA into an ISA to utilise your ISA allowance, and within GIAs can manage the portfolio to utilise your CGT allowance on an ongoing basis (to reduce your overall CGT liability)."
+                  }
+                ]
+              }
+            ]
+          },
+          "providerCharges": {
+            "default": {
+              "avivaPension": {
+                "bandChargeFlat": 0,
+                "bandChargeMinimum": 0,
+                "bands": [
+                  {
+                    "bandName": "bandA",
+                    "bandAmountUpper": 30000,
+                    "bandChargePercent": 0.004
+                  },
+                  {
+                    "bandName": "bandB",
+                    "bandAmountUpper": 220000,
+                    "bandChargePercent": 0.0035
+                  },
+                  {
+                    "bandName": "bandC",
+                    "bandAmountUpper": 150000,
+                    "bandChargePercent": 0.0025
+                  },
+                  {
+                    "bandName": "else",
+                    "bandChargePercent": 0.0015
+                  }
+                ]
+              },
+              "avivaISAGIA": {
+                "bandChargeFlat": 0,
+                "bandChargeMinimum": 0,
+                "bands": [
+                  {
+                    "bandName": "bandA",
+                    "bandAmountUpper": 400000,
+                    "bandChargePercent": 0.0025
+                  },
+                  {
+                    "bandName": "else",
+                    "bandChargePercent": 0.0015
+                  }
+                ]
+              },
+              "cazenoveISAGIA": {
+                "bandChargeFlat": 0,
+                "bandChargeMinimum": 0,
+                "bands": [
+                  {
+                    "bandName": "else",
+                    "bandChargePercent": 0.009
+                  }
+                ]
+              },
+              "curtisBanksPension": {
+                "bandChargeFlat": 250,
+                "bandChargeMinimum": 0,
+                "bands": [
+                  {
+                    "bandName": "else",
+                    "bandChargePercent": 0
+                  }
+                ]
+              }
+            },
+            "client": {
+              "avivaPension": {
+                "bandChargeFlat": 0,
+                "bandChargeMinimum": 0,
+                "bands": [
+                  {
+                    "bandName": "* bandA",
+                    "bandAmountUpper": 30000,
+                    "bandChargePercent": 0.004
+                  },
+                  {
+                    "bandName": "* bandB",
+                    "bandAmountUpper": 220000,
+                    "bandChargePercent": 0.0035
+                  },
+                  {
+                    "bandName": "* bandC",
+                    "bandAmountUpper": 150000,
+                    "bandChargePercent": 0.0025
+                  },
+                  {
+                    "bandName": "* else",
+                    "bandChargePercent": 0.0015
+                  }
+                ]
+              },
+              "avivaISAGIA": {
+                "bandChargeFlat": 0,
+                "bandChargeMinimum": 0,
+                "bands": [
+                  {
+                    "bandName": "* bandA",
+                    "bandAmountUpper": 400000,
+                    "bandChargePercent": 0.0025
+                  },
+                  {
+                    "bandName": "* else",
+                    "bandChargePercent": 0.0015
+                  }
+                ]
+              },
+              "cazenoveISAGIA": {
+                "bandChargeFlat": 0,
+                "bandChargeMinimum": 0,
+                "bands": [
+                  {
+                    "bandName": "* else",
+                    "bandChargePercent": 0.009
+                  }
+                ]
+              },
+              "curtisBanksPension": {
+                "bandChargeFlat": 250,
+                "bandChargeMinimum": 0,
+                "bands": [
+                  {
+                    "bandName": "* else",
+                    "bandChargePercent": 0
+                  }
+                ]
+              }
+            }
+          },
+          "adviserCharges": {
+            "default": {
+              "totalImplementationCharge": {
+                "bandChargeFlat": 0,
+                "bandChargeMinimum": 0,
+                "bands": [
+                  {
+                    "bandName": "bandA",
+                    "bandAmountUpper": 100000,
+                    "bandChargePercent": 0.02
+                  },
+                  {
+                    "bandName": "else",
+                    "bandChargePercent": 0.01
+                  }
+                ]
+              },
+              "annualAdviserCharge": {
+                "bandChargeFlat": 0,
+                "bandChargeMinimum": 0,
+                "bands": [
+                  {
+                    "bandName": "else",
+                    "bandChargePercent": 0.0075
+                  }
+                ]
+              }
+            },
+            "client": {
+              "totalImplementationCharge": {
+                "bandChargeFlat": 0,
+                "bandChargeMinimum": 0,
+                "bands": [
+                  {
+                    "bandName": "* bandA",
+                    "bandAmountUpper": 100000,
+                    "bandChargePercent": 0.02
+                  },
+                  {
+                    "bandName": "* else",
+                    "bandChargePercent": 0.01
+                  }
+                ]
+              },
+              "annualAdviserCharge": {
+                "bandChargeFlat": 0,
+                "bandChargeMinimum": 0,
+                "bands": [
+                  {
+                    "bandName": "* else",
+                    "bandChargePercent": 0.0075
+                  }
+                ]
+              }
+            }
+          },
+          "additionalRiskFactorText": {
+            "default": ["Some default additional risk factortext"],
+            "client": ["* Some default additional risk factortext"]
+          },
+          "thankYouText": {
+            "default": [
+              {
+                "paragraph": "Thanks for taking the time to read this report!"
+              },
+              {
+                "paragraph": "We hope you have found this detailed report helpful. We pride ourselves on offering high quality financial advice at very affordable prices and look forward to making this financial plan a reality with you. Please drop us a line at adviser-hub@ammonitewealth.com or call us on 020 3434 2718 to get started with your financial plan."
+              }
+            ],
+            "client": [
+              {
+                "paragraph": "* Thanks for taking the time to read this report!"
+              },
+              {
+                "paragraph": "* We hope you have found this detailed report helpful. We pride ourselves on offering high quality financial advice at very affordable prices and look forward to making this financial plan a reality with you. Please drop us a line at adviser-hub@demofirm.com or call us on 020 3434 2718 to get started with your financial plan."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "hostname": "demo-config"
+  }
+}

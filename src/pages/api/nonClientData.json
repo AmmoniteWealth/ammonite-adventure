@@ -1,0 +1,50 @@
+{
+  "status": 200,
+  "data": {
+    "Pension data": {
+      "_id": "62262e678afa604020e391ba",
+      "type": "Pension data",
+      "adjustedIncomeLimit": 240000,
+      "lifetimeAllowance": 1073100,
+      "mpaa": 4000,
+      "pensionAllowanceInNonEarner": 3600,
+      "pensionAnnualAllowance": 40000,
+      "statePensionAmount": 9628,
+      "thresholdIncomeLimit": 200000
+    },
+    "Assumptions": {
+      "_id": "62262e728afa604020e391bb",
+      "type": "Assumptions",
+      "cashGrowth": 0.01,
+      "defaultRetirementAge": 68,
+      "drawdownRate": 0.035,
+      "inflation": 0.025,
+      "investmentGrowth": 0.06,
+      "pensionGrowth": 0.06
+    },
+    "Allowances": {
+      "_id": "62262e1c8afa604020e391b9",
+      "type": "Allowances",
+      "isaAllowance": 20000,
+      "personalAllowance": 12570,
+      "basicRateTaxBand": {
+        "lowerBound": 12571,
+        "higherBound": 50270
+      },
+      "higherRateTaxBand": {
+        "lowerBound": 50271,
+        "higherBound": 150000
+      },
+      "additionalRateTaxBand": {
+        "lowerBound": 150000
+      },
+      "basicRateTax": 0.2,
+      "higherRateTax": 0.4,
+      "additionalRateTax": 0.45,
+      "corporationTax": 0.19,
+      "niForEmployees": 0.12,
+      "niForEmployers": 0.138,
+      "capitalGainsTax": "12300"
+    }
+  }
+}
