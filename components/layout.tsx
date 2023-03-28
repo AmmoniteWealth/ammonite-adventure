@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Footer from "./footer";
 import styles from "./layout.module.css";
-
+import React from "react";
 interface LayoutProps {
   children: React.ReactNode;
   story?: boolean;

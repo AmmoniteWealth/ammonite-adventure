@@ -1,5 +1,5 @@
 import styles from "./storyblock.module.css";
-
+import React from "react";
 interface StoryblockProps {
   children: React.ReactNode;
 }

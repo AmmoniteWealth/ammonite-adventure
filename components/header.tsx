@@ -1,5 +1,5 @@
 import styles from "./header.module.css";
-
+import React from "react";
 interface HeaderProps {
   title: string;
   zoom?: boolean;

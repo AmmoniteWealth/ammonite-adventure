@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./form.module.css";
-
+import React from "react";
 const INSERT_FORM_DATA_MUTATION = `
   mutation insertFormData($first_name: String!, $last_name: String!, $email: String!, $goal_name: String!, $goal_notes: String!) {
     insert_Users(objects: [{first_name: $first_name, last_name: $last_name, email: $email, goal_name: $goal_name, goal_notes: $goal_notes, }]) {
