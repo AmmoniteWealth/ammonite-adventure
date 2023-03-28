@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import Header from "../components/header";
 import { useAppContext } from "../Context/appContext";
 import React from "react";
-
+import { getIsClient } from "./api/getIsClient";
 import {
   useGetTenantConfigQuery,
   useGetNonClientDataQuery,
@@ -37,12 +37,12 @@ export default function Home() {
   //   story?: any;
   // };
   console.log("DATA", tenantConfig.data.config.About.Card1.intro.default);
+  const _config = tenantConfig.data.config;
+  console.log("_config", _config);
+
   return (
     <Layout story={undefined}>
-      <Header
-        title={`Welcome to ammonite! Add your details to see them displayed in your ammonite adventure`}
-        zoom={undefined}
-      />
+      <Header title={getIsClient(_config.About.Card1.intro)} zoom={undefined} />
       <br />
       <Link href="/s/start">Start</Link>
       <Link href="/makeYourOwn">Add your details</Link>
