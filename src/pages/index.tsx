@@ -31,11 +31,6 @@ export default function Home() {
   if (!tenantConfig || !nonClientData) return <div>Missing config!</div>;
 
   const user = useAppContext();
-
-  // type LayoutProps = {
-  //   children: React.ReactNode;
-  //   story?: any;
-  // };
   console.log("DATA", tenantConfig.data.config.About.Card1.intro.default);
   const _config = tenantConfig.data.config;
   console.log("_config", _config);
