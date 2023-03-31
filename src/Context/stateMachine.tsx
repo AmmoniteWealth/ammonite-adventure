@@ -1,6 +1,6 @@
 import { createMachine, MachineConfig } from "xstate";
-import tenantConfig from "../pages/api/tenantConfig.json";
 import { getIsClient } from "@/pages/api/getIsClient";
+
 interface User {
   first_name?: string;
   last_name?: string;
@@ -45,13 +45,7 @@ enum SixthLevel {
 
 const storyMachine = (user: User | null): MachineConfig<any, any, any> => {
   const { first_name, last_name, email, goal_name, goal_notes } = user ?? {};
-  const config = tenantConfig;
-  console.log("tenantConfig from story machine", tenantConfig);
-  const _initialConfig = tenantConfig.data.config;
-  console.log(
-    "tenantConfig 2 _initialConfig from story machine",
-    _initialConfig
-  );
+
   return {
     id: "ammonitedev",
     initial: "Start",
@@ -59,9 +53,9 @@ const storyMachine = (user: User | null): MachineConfig<any, any, any> => {
       [IntroVals.Start]: {
         meta: {
           story: `**Start**  
-          ${first_name ? first_name : ""} ${getIsClient(
-            _initialConfig.About.Card1.intro
-          )}`,
+          ${first_name ? first_name : ""} 
+  
+          `,
         },
         on: {
           [FirstLevel.GoalMapper]: FirstLevel.GoalMapper,
@@ -76,8 +70,8 @@ const storyMachine = (user: User | null): MachineConfig<any, any, any> => {
           } the BASIC INFORMATION button to Start the goalmapper or go to the Dashboard`,
         },
         on: {
-          [SecondLevel.Info]: SecondLevel.Info,
           [FirstLevel.Dashboard]: FirstLevel.Dashboard,
+          [SecondLevel.Info]: SecondLevel.Info,
         },
       },
       [FirstLevel.Dashboard]: {

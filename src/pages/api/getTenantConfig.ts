@@ -1,6 +1,6 @@
 import type { NextApiHandler } from "next";
 
-import tenantConfig from "./tenantConfig.json";
+import tenantConfig from "./configJson.json";
 
 const countHandler: NextApiHandler = async (request, response) => {
   // simulate IO latency
