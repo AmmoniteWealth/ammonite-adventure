@@ -6,7 +6,7 @@ import { getIsClient } from "./api/getIsClient";
 import {
   useGetTenantConfigQuery,
   useGetNonClientDataQuery,
-} from "../../src/pages/services/config";
+} from "../Functions/config";
 
 export default function Home() {
   const hostname =

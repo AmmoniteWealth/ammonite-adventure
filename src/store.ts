@@ -1,7 +1,7 @@
 import { configureStore, ConfigureStoreOptions } from "@reduxjs/toolkit";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 
-import { api } from "../src/pages/services/api";
+import { api } from "./Functions/api";
 
 export const createStore = (
   options?: ConfigureStoreOptions["preloadedState"] | undefined
