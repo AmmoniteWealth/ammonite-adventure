@@ -1,7 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-import Custom from "../makeYourOwn";
 import Layout from "../../components/layout";
 import Storyblock from "../../components/storyblock";
 
