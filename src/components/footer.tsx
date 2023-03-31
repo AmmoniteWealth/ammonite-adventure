@@ -1,10 +1,17 @@
 import React from "react";
+import Image from "next/image";
 export default function Footer() {
   return (
     <>
       <footer>
         Made by{" "}
-        <img src="ammoniteLogo.png" alt="ammonite logo" className="logo" />
+        <Image
+          src="/ammoniteLogo.png"
+          alt="ammonite logo"
+          className="logo"
+          width="110"
+          height="70"
+        ></Image>
       </footer>
       <style jsx>{`
         footer {
