@@ -39,9 +39,13 @@ export default function Home() {
   console.log("tenantConfig 2 _initialConfig", _initialConfig);
   return (
     <Layout story={undefined}>
-      <Header title={"Hello"} zoom={undefined} />
+      <Header
+        title={"Hello, welcome to the ammonite Goalmapper Builder"}
+        zoom={undefined}
+      />
       <br />
       <Link href="/s/start">Start</Link>
+
       <Link href="/makeYourOwn">Add your details</Link>
     </Layout>
   );

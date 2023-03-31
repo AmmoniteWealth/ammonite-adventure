@@ -1,5 +1,6 @@
 import { createMachine, MachineConfig } from "xstate";
-
+import tenantConfig from "../pages/api/tenantConfig.json";
+import { getIsClient } from "@/pages/api/getIsClient";
 interface User {
   first_name?: string;
   last_name?: string;
@@ -14,39 +15,53 @@ enum IntroVals {
 
 enum FirstLevel {
   GoalMapper = "goal-mapper",
-  Dashboard = "Dashboard",
+  Dashboard = "dashboard",
 }
 
 enum SecondLevel {
-  Goals = "Goals",
-  Info = "Info",
+  Info = "basic-information",
+  HealthCheck = "financial-health-check",
 }
 
 enum ThirdLevel {
-  HealthCheck = "health-check",
-  RetirementInfo = "retirement-Info",
+  Goals = "please-choose-your-goals",
+  AboutGoals = "please-tell-us-about-your-goals",
 }
 
 enum FourthLevel {
-  YourReport = "your-report",
+  RetirementInfo = "your-retirement-spending",
+  SavingForRetirement = "saving-for-retirement",
 }
 
 enum FifthLevel {
+  YourGoalSummary = "your-goal-summary",
+  YourHealthCheckResults = "your-financial-health-check-results",
+}
+
+enum SixthLevel {
   GetInTouch = "get-in-touch",
+  ThankYou = "thank-you",
 }
 
 const storyMachine = (user: User | null): MachineConfig<any, any, any> => {
   const { first_name, last_name, email, goal_name, goal_notes } = user ?? {};
-
+  const config = tenantConfig;
+  console.log("tenantConfig from story machine", tenantConfig);
+  const _initialConfig = tenantConfig.data.config;
+  console.log(
+    "tenantConfig 2 _initialConfig from story machine",
+    _initialConfig
+  );
   return {
     id: "ammonitedev",
     initial: "Start",
     states: {
       [IntroVals.Start]: {
         meta: {
-          story: `${
-            first_name ? first_name + ", we" : "We "
-          } build financial adviser software for pure online engagement, resulting in broader customer reach, enhanced conversion and greater operational efficiency.`,
+          story: `**Start**  
+          ${first_name ? first_name : ""} ${getIsClient(
+            _initialConfig.About.Card1.intro
+          )}`,
         },
         on: {
           [FirstLevel.GoalMapper]: FirstLevel.GoalMapper,
@@ -55,9 +70,10 @@ const storyMachine = (user: User | null): MachineConfig<any, any, any> => {
       },
       [FirstLevel.GoalMapper]: {
         meta: {
-          story: `${
+          story: `**Goalmapper**  
+          ${
             first_name ? first_name + ", select " : "Select"
-          } the INFO button to Start the goalmapper or go to the Dashboard`,
+          } the BASIC INFORMATION button to Start the goalmapper or go to the Dashboard`,
         },
         on: {
           [SecondLevel.Info]: SecondLevel.Info,
@@ -67,7 +83,7 @@ const storyMachine = (user: User | null): MachineConfig<any, any, any> => {
       [FirstLevel.Dashboard]: {
         meta: {
           story: user?.first_name
-            ? `DASHBOARD  
+            ? `**Dashboard**  
             **First name:** ${first_name ? first_name + "" : ""}  
             **Last name:** ${last_name ? "  " + last_name : ""}  
             **Email Address:** ${email ? "  " + email : ""}  
@@ -78,78 +94,114 @@ const storyMachine = (user: User | null): MachineConfig<any, any, any> => {
         },
         on: {
           [IntroVals.Start]: IntroVals.Start,
-          [FifthLevel.GetInTouch]: FifthLevel.GetInTouch,
+          [SixthLevel.GetInTouch]: SixthLevel.GetInTouch,
         },
       },
 
       [SecondLevel.Info]: {
         meta: {
-          story: `Info  
+          story: `**Basic Information**  
           **First name:** ${first_name ? first_name : ""}  
           **Last name:** ${last_name ? last_name : ""}  
           **Email address:** ${email ? email : ""}`,
         },
         on: {
           [FirstLevel.GoalMapper]: FirstLevel.GoalMapper,
-          [SecondLevel.Goals]: SecondLevel.Goals,
+          [SecondLevel.HealthCheck]: SecondLevel.HealthCheck,
         },
       },
-      [SecondLevel.Goals]: {
+      [SecondLevel.HealthCheck]: {
         meta: {
-          story: `Goals  
-          **Your goal name here:** ${goal_name ? goal_name : ""}  
-          **Your goal notes here:** ${goal_notes ? goal_notes : ""}`,
-        },
-        on: {
-          [SecondLevel.Info]: SecondLevel.Info,
-          [ThirdLevel.HealthCheck]: ThirdLevel.HealthCheck,
-        },
-      },
-      [ThirdLevel.HealthCheck]: {
-        meta: {
-          story: `${
+          story: `**Financial Health Check**  
+          ${
             first_name ? first_name + ", your" : "Your "
           } health check enables us to see where you are now so that we can prepare your report and advice - would like to use this state to navigate to another page`,
         },
         on: {
-          [SecondLevel.Goals]: SecondLevel.Goals,
-          [ThirdLevel.RetirementInfo]: ThirdLevel.RetirementInfo,
+          [SecondLevel.Info]: SecondLevel.Info,
+          [ThirdLevel.Goals]: ThirdLevel.Goals,
         },
       },
-      [ThirdLevel.RetirementInfo]: {
+      [ThirdLevel.Goals]: {
         meta: {
-          story: `${
+          story: `**Please Choose Your Goals**`,
+        },
+        on: {
+          [SecondLevel.HealthCheck]: SecondLevel.HealthCheck,
+          [ThirdLevel.AboutGoals]: ThirdLevel.AboutGoals,
+        },
+      },
+      [ThirdLevel.AboutGoals]: {
+        meta: {
+          story: `**Please Tell Us About Your Goals** `,
+        },
+        on: {
+          [ThirdLevel.Goals]: ThirdLevel.Goals,
+          [FourthLevel.RetirementInfo]: FourthLevel.RetirementInfo,
+        },
+      },
+      [FourthLevel.RetirementInfo]: {
+        meta: {
+          story: `**Your Retirement Spending**  
+          ${
             first_name ? first_name + ", add" : "Add "
           }  your retirement Info here - would like to use this state to navigate to another page`,
         },
         on: {
-          [ThirdLevel.HealthCheck]: ThirdLevel.HealthCheck,
-          [FourthLevel.YourReport]: FourthLevel.YourReport,
+          [ThirdLevel.AboutGoals]: ThirdLevel.AboutGoals,
+          [FourthLevel.SavingForRetirement]: FourthLevel.SavingForRetirement,
         },
       },
-      [FourthLevel.YourReport]: {
+      [FourthLevel.SavingForRetirement]: {
         meta: {
-          story: `${
-            first_name ? first_name + ", setting" : "Setting"
-          } your Goals sooner rather than later could make a big difference to achieving them. Here is your report -  
-          **First name:** ${first_name ? first_name + "" : ""}  
-          **Last name:** ${last_name ? "  " + last_name : ""}  
-          **Email Address:** ${email ? "  " + email : ""}  
-          **Goal name:** ${goal_name ? "  " + goal_name : ""}  
-          **Goal notes:** ${goal_notes ? "  " + goal_notes : ""}`,
+          story: `**Saving For Retirement**`,
         },
         on: {
-          [FifthLevel.GetInTouch]: FifthLevel.GetInTouch,
+          [FourthLevel.RetirementInfo]: FourthLevel.RetirementInfo,
+          [FifthLevel.YourGoalSummary]: FifthLevel.YourGoalSummary,
         },
       },
-
-      [FifthLevel.GetInTouch]: {
+      [FifthLevel.YourGoalSummary]: {
         meta: {
-          story: `**Get** **in** **touch** -  ${
+          story: `**Your Goal Summary**`,
+        },
+        on: {
+          [FourthLevel.SavingForRetirement]: FourthLevel.SavingForRetirement,
+          [FifthLevel.YourHealthCheckResults]:
+            FifthLevel.YourHealthCheckResults,
+        },
+      },
+      [FifthLevel.YourHealthCheckResults]: {
+        meta: {
+          story: `**Your Financial Health Check Results**`,
+        },
+        on: {
+          [FourthLevel.RetirementInfo]: FourthLevel.RetirementInfo,
+          [SixthLevel.ThankYou]: SixthLevel.ThankYou,
+        },
+      },
+      [SixthLevel.ThankYou]: {
+        meta: {
+          story: `**Thank You**  
+          ${
             first_name ? " " + first_name : ""
           } request a demo and find out how ammonite wealth is empowering financial advisers with the tools to engage and economically service the next generation,`,
         },
         on: {
+          [FifthLevel.YourHealthCheckResults]:
+            FifthLevel.YourHealthCheckResults,
+          [SixthLevel.GetInTouch]: SixthLevel.GetInTouch,
+        },
+      },
+      [SixthLevel.GetInTouch]: {
+        meta: {
+          story: `**Get In Touch**  
+          ${
+            first_name ? " " + first_name : ""
+          } request a demo and find out how ammonite wealth is empowering financial advisers with the tools to engage and economically service the next generation,`,
+        },
+        on: {
+          [SixthLevel.ThankYou]: SixthLevel.ThankYou,
           reStart: IntroVals.Start,
         },
       },
