@@ -2,6 +2,7 @@ import Link from "next/link";
 import Layout from "../components/layout";
 import Header from "@/components/header";
 import React from "react";
+import tenantConfig from "../pages/api/tenantConfig.json";
 // import { getIsClient } from "./api/getIsClient";
 // import {
 //   useGetTenantConfigQuery,
@@ -32,7 +33,10 @@ export default function Home() {
   // console.log("DATA", tenantConfig.data.config.About.Card1.intro.default);
   // const _config = tenantConfig.data.config;
   // console.log("_config", _config);
-
+  const config = tenantConfig;
+  console.log("tenantConfig", tenantConfig);
+  const _initialConfig = tenantConfig.data.config;
+  console.log("tenantConfig 2 _initialConfig", _initialConfig);
   return (
     <Layout story={undefined}>
       <Header title={"Hello"} zoom={undefined} />

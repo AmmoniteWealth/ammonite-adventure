@@ -8,6 +8,7 @@ import { useAppContext } from "../../Context/appContext";
 import { useMachine } from "@xstate/react";
 import { stateMachineFromVars } from "../../Context/stateMachine";
 import ReactMarkdown from "react-markdown";
+import tenantConfig from "../../pages/api/tenantConfig.json";
 const Story = () => {
   let { user } = useAppContext();
   const [state, send] = useMachine(stateMachineFromVars(user!));
@@ -29,6 +30,10 @@ const Story = () => {
       router.push(`/s/start`, undefined, { shallow: true });
     }
   }, []);
+
+  const config = tenantConfig;
+  const _initialConfig = tenantConfig.data.config;
+  console.log("_initialConfig from story machine", _initialConfig);
 
   return (
     <Layout story>
