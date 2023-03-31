@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Layout from "../components/layout";
-import Header from "../components/header";
-import { useAppContext } from "../Context/appContext";
+import Header from "@/components/header";
 import React from "react";
 import { getIsClient } from "./api/getIsClient";
 import {
@@ -30,7 +29,6 @@ export default function Home() {
 
   if (!tenantConfig || !nonClientData) return <div>Missing config!</div>;
 
-  const user = useAppContext();
   console.log("DATA", tenantConfig.data.config.About.Card1.intro.default);
   const _config = tenantConfig.data.config;
   console.log("_config", _config);
