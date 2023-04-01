@@ -2,15 +2,15 @@ import Link from "next/link";
 import Layout from "../components/layout";
 import Header from "@/components/header";
 import React from "react";
-import { useRouter } from "next/router";
+import Image from "next/image";
 import { getIsClient } from "./api/getIsClient";
+import { useRouter } from "next/router";
 import {
   useGetTenantConfigQuery,
   useGetNonClientDataQuery,
 } from "../Functions/config";
 
 export default function Home() {
-  const router = useRouter();
   const hostname =
     (typeof window !== "undefined" && window.location.hostname) || "localhost";
 
@@ -36,13 +36,11 @@ export default function Home() {
 
   return (
     <Layout story={undefined}>
-      <Header
-        title={"Hello, welcome to the ammonite Goalmapper Builder"}
-        zoom={undefined}
-      />
+      <img src={getIsClient(_config.Login.logo)} height="50"></img>
+      <Header title={getIsClient(_config.About.Card2.intro)} zoom={undefined} />
       <br />
-      <Link href="/s/start">Start</Link>
-
+      <Link href="/s/start">Version 1</Link>
+      <Link href="/s/start">Version 2</Link>
       <Link href="/makeYourOwn">Add your details</Link>
     </Layout>
   );

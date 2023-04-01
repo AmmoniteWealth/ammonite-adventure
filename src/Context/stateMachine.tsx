@@ -1,5 +1,4 @@
 import { createMachine, MachineConfig } from "xstate";
-import { getIsClient } from "@/pages/api/getIsClient";
 
 interface User {
   first_name?: string;
@@ -127,7 +126,7 @@ const storyMachine = (user: User | null): MachineConfig<any, any, any> => {
       },
       [ThirdLevel.AboutGoals]: {
         meta: {
-          story: `**Please Tell Us About Your Goals** `,
+          story: `**Please Tell Us About Your Goals**`,
         },
         on: {
           [ThirdLevel.Goals]: ThirdLevel.Goals,
@@ -136,10 +135,7 @@ const storyMachine = (user: User | null): MachineConfig<any, any, any> => {
       },
       [FourthLevel.RetirementInfo]: {
         meta: {
-          story: `**Your Retirement Spending**  
-          ${
-            first_name ? first_name + ", add" : "Add "
-          }  your retirement Info here - would like to use this state to navigate to another page`,
+          story: `**Your Retirement Spending**`,
         },
         on: {
           [ThirdLevel.AboutGoals]: ThirdLevel.AboutGoals,
@@ -157,7 +153,9 @@ const storyMachine = (user: User | null): MachineConfig<any, any, any> => {
       },
       [FifthLevel.YourGoalSummary]: {
         meta: {
-          story: `**Your Goal Summary**`,
+          story: `**Your Goal Summary**  
+          **Goal name:** ${goal_name ? "  " + goal_name : ""}  
+          **Goal notes:** ${goal_notes ? "  " + goal_notes : ""}`,
         },
         on: {
           [FourthLevel.SavingForRetirement]: FourthLevel.SavingForRetirement,
@@ -177,9 +175,9 @@ const storyMachine = (user: User | null): MachineConfig<any, any, any> => {
       [SixthLevel.ThankYou]: {
         meta: {
           story: `**Thank You**  
-          ${
-            first_name ? " " + first_name : ""
-          } request a demo and find out how ammonite wealth is empowering financial advisers with the tools to engage and economically service the next generation,`,
+          ${first_name ? " " + first_name : ""}  
+    
+          `,
         },
         on: {
           [FifthLevel.YourHealthCheckResults]:
