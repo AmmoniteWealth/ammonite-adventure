@@ -17,29 +17,36 @@ function UserForm() {
     goal_name: "",
     goal_notes: "",
   });
-
+  const { X_HASURA_ADMIN_SECRET, NEXT_PUBLIC_API_URL } = process.env;
+  const secret = process.env.X_HASURA_ADMIN_SECRET;
   function handleInputChange(event: { target: { name: any; value: any } }) {
     const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
   }
 
   async function handleSubmit(event: { preventDefault: () => void }) {
+    const X_HASURA_ADMIN_SECRET: string | undefined = secret;
+
+    if (!X_HASURA_ADMIN_SECRET) {
+      throw new Error("X_HASURA_ADMIN_SECRET is not defined");
+    }
+
+    const headers = new Headers();
+    headers.append("Content-Type", "application/json");
+    headers.append("x-hasura-admin-secret", X_HASURA_ADMIN_SECRET);
+    const requestOptions = {
+      method: "POST",
+      headers: headers,
+      body: JSON.stringify({
+        query: INSERT_FORM_DATA_MUTATION,
+        variables: formData,
+      }),
+    };
     event.preventDefault();
     try {
       const response = await fetch(
         "https://ammonitestory.hasura.app/v1/graphql",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "x-hasura-admin-secret":
-              "uh9L3RNhHZxUQuV64U7rB0wUtG8AOpYhSDWAakYAxaDzquca31RAPEIUKrINnm5J",
-          },
-          body: JSON.stringify({
-            query: INSERT_FORM_DATA_MUTATION,
-            variables: formData,
-          }),
-        }
+        requestOptions
       );
 
       const data = await response.json();

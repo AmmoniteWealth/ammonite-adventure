@@ -76,8 +76,8 @@ const storyMachine = (user: User | null): MachineConfig<any, any, any> => {
           } the BASIC INFORMATION button to Start the goalmapper or go to the Dashboard`,
         },
         on: {
-          [SecondLevel.Info]: SecondLevel.Info,
           [FirstLevel.Dashboard]: FirstLevel.Dashboard,
+          [SecondLevel.Info]: SecondLevel.Info,
         },
       },
       [FirstLevel.Dashboard]: {

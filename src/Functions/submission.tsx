@@ -20,20 +20,26 @@ const addUser = async (
   goal_name: string,
   goal_notes: string
 ) => {
-  const idCreated = await fetch("https://ammonitestory.hasura.app/v1/graphql", {
-    headers: {
-      "Content-Type": "application/json",
-      "x-hasura-admin-secret":
-        "uh9L3RNhHZxUQuV64U7rB0wUtG8AOpYhSDWAakYAxaDzquca31RAPEIUKrINnm5J",
-    },
+  const secret = process.env.X_HASURA_ADMIN_SECRET;
+  const X_HASURA_ADMIN_SECRET: string | undefined = secret;
+
+  if (!X_HASURA_ADMIN_SECRET) {
+    throw new Error("X_HASURA_ADMIN_SECRET is not defined");
+  }
+  const headers = new Headers();
+  headers.append("Content-Type", "application/json");
+  headers.append("x-hasura-admin-secret", X_HASURA_ADMIN_SECRET);
+  const requestOptions = {
+    method: "POST",
+    headers: headers,
     body: JSON.stringify({
       query: `
-      mutation insertFormData($first_name: String!, $last_name: String!, $email: String!, $goal_name: String!, $goal_notes: String!) {
-        insert_Users(objects: [{first_name: $first_name, last_name: $last_name, email: $email, goal_name: $goal_name, goal_notes: $goal_notes, }]) {
-          affected_rows
-        }
-      }
-    `,
+  mutation insertFormData($first_name: String!, $last_name: String!, $email: String!, $goal_name: String!, $goal_notes: String!) {
+    insert_Users(objects: [{first_name: $first_name, last_name: $last_name, email: $email, goal_name: $goal_name, goal_notes: $goal_notes, }]) {
+      affected_rows
+    }
+  }
+`,
       variables: {
         first_name,
         last_name,
@@ -42,7 +48,11 @@ const addUser = async (
         goal_notes,
       },
     }),
-  }).then((res) => res.json());
+  };
+  const idCreated = await fetch(
+    "https://ammonitestory.hasura.app/v1/graphql",
+    requestOptions
+  ).then((res) => res.json());
 
   return idCreated;
 };
