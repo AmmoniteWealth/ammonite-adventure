@@ -14,33 +14,42 @@ enum IntroVals {
 }
 
 enum FirstLevel {
-  GoalMapper = "goal-mapper",
+  GoalMapper1 = "goal-mapper-V1",
+  GoalMapper2 = "goal-mapper-V2",
   Dashboard = "dashboard",
 }
 
 enum SecondLevel {
-  Info = "basic-information",
-  HealthCheck = "financial-health-check",
+  Info1 = "basic-information-1",
+  Info2 = "basic-information-2",
+  HealthCheck1 = "financial-health-check-1",
+  HealthCheck2 = "financial-health-check-2",
 }
 
 enum ThirdLevel {
-  Goals = "please-choose-your-goals",
-  AboutGoals = "please-tell-us-about-your-goals",
+  Goals1 = "please-choose-your-goals-1",
+  AboutGoals1 = "please-tell-us-about-your-goals-1",
+  Goals2 = "please-choose-your-goal-2",
+  AboutGoals2 = "please-tell-us-about-your-goals-2",
 }
 
 enum FourthLevel {
-  RetirementInfo = "your-retirement-spending",
-  SavingForRetirement = "saving-for-retirement",
+  RetirementInfo = "your-retirement-spending1-",
+  SavingForRetirement = "saving-for-retirement-1",
 }
 
 enum FifthLevel {
-  YourGoalSummary = "your-goal-summary",
-  YourHealthCheckResults = "your-financial-health-check-results",
+  YourGoalSummary1 = "your-goal-summar-1",
+  YourHealthCheckResults1 = "your-financial-health-check-results-1",
+  YourGoalSummary2 = "your-goal-summary-2",
+  YourHealthCheckResults2 = "your-financial-health-check-results-2",
 }
 
 enum SixthLevel {
-  GetInTouch = "get-in-touch",
-  ThankYou = "thank-you",
+  GetInTouch1 = "get-in-touch-",
+  ThankYou1 = "thank-you-1",
+  GetInTouch2 = "get-in-touch-2",
+  ThankYou2 = "thank-you-2",
 }
 
 const storyMachine = (user: User | null): MachineConfig<any, any, any> => {
@@ -61,23 +70,38 @@ const storyMachine = (user: User | null): MachineConfig<any, any, any> => {
           story: `**Start**  
           ${first_name ? first_name : ""} ${getIsClient(
             _initialConfig.About.Card1.intro
-          )}`,
+          )}  
+          **Goalmapper V1 has Retirement info**  
+          **Goalmapper V2 has no Retirement info**`,
         },
         on: {
-          [FirstLevel.GoalMapper]: FirstLevel.GoalMapper,
+          [FirstLevel.GoalMapper1]: FirstLevel.GoalMapper1,
+          [FirstLevel.GoalMapper2]: FirstLevel.GoalMapper2,
           [FirstLevel.Dashboard]: FirstLevel.Dashboard,
         },
       },
-      [FirstLevel.GoalMapper]: {
+      [FirstLevel.GoalMapper1]: {
         meta: {
-          story: `**Goalmapper**  
+          story: `**Goalmapper V1**  
           ${
             first_name ? first_name + ", select " : "Select"
           } the BASIC INFORMATION button to Start the goalmapper or go to the Dashboard`,
         },
         on: {
           [FirstLevel.Dashboard]: FirstLevel.Dashboard,
-          [SecondLevel.Info]: SecondLevel.Info,
+          [SecondLevel.Info1]: SecondLevel.Info1,
+        },
+      },
+      [FirstLevel.GoalMapper2]: {
+        meta: {
+          story: `**Goalmapper V2**  
+          ${
+            first_name ? first_name + ", select " : "Select"
+          } the BASIC INFORMATION button to Start the goalmapper or go to the Dashboard`,
+        },
+        on: {
+          [FirstLevel.Dashboard]: FirstLevel.Dashboard,
+          [SecondLevel.Info2]: SecondLevel.Info2,
         },
       },
       [FirstLevel.Dashboard]: {
@@ -88,17 +112,17 @@ const storyMachine = (user: User | null): MachineConfig<any, any, any> => {
             **Last name:** ${last_name ? "  " + last_name : ""}  
             **Email Address:** ${email ? "  " + email : ""}  
             **Goal name:** ${goal_name ? "  " + goal_name : ""}  
-            **Goal notes:** ${goal_notes ? "  " + goal_notes : ""} `
+            **Goal notes:** ${goal_notes ? "  " + goal_notes : ""}`
             : `**DASHBOARD**  
             Go back home and add your details to see them displayed here`,
         },
         on: {
           [IntroVals.Start]: IntroVals.Start,
-          [SixthLevel.GetInTouch]: SixthLevel.GetInTouch,
+          [SixthLevel.GetInTouch1]: SixthLevel.GetInTouch1,
         },
       },
 
-      [SecondLevel.Info]: {
+      [SecondLevel.Info1]: {
         meta: {
           story: `**Basic Information**  
           **First name:** ${first_name ? first_name : ""}  
@@ -106,11 +130,23 @@ const storyMachine = (user: User | null): MachineConfig<any, any, any> => {
           **Email address:** ${email ? email : ""}`,
         },
         on: {
-          [FirstLevel.GoalMapper]: FirstLevel.GoalMapper,
-          [SecondLevel.HealthCheck]: SecondLevel.HealthCheck,
+          [FirstLevel.GoalMapper1]: FirstLevel.GoalMapper1,
+          [SecondLevel.HealthCheck1]: SecondLevel.HealthCheck1,
         },
       },
-      [SecondLevel.HealthCheck]: {
+      [SecondLevel.Info2]: {
+        meta: {
+          story: `**Basic Information**  
+          **First name:** ${first_name ? first_name : ""}  
+          **Last name:** ${last_name ? last_name : ""}  
+          **Email address:** ${email ? email : ""}`,
+        },
+        on: {
+          [FirstLevel.GoalMapper2]: FirstLevel.GoalMapper2,
+          [SecondLevel.HealthCheck2]: SecondLevel.HealthCheck2,
+        },
+      },
+      [SecondLevel.HealthCheck1]: {
         meta: {
           story: `**Financial Health Check**  
           ${
@@ -118,26 +154,56 @@ const storyMachine = (user: User | null): MachineConfig<any, any, any> => {
           } health check enables us to see where you are now so that we can prepare your report and advice - would like to use this state to navigate to another page`,
         },
         on: {
-          [SecondLevel.Info]: SecondLevel.Info,
-          [ThirdLevel.Goals]: ThirdLevel.Goals,
+          [SecondLevel.Info1]: SecondLevel.Info1,
+          [ThirdLevel.Goals1]: ThirdLevel.Goals1,
         },
       },
-      [ThirdLevel.Goals]: {
+      [SecondLevel.HealthCheck2]: {
+        meta: {
+          story: `**Financial Health Check**  
+          ${
+            first_name ? first_name + ", your" : "Your "
+          } health check enables us to see where you are now so that we can prepare your report and advice - would like to use this state to navigate to another page`,
+        },
+        on: {
+          [SecondLevel.Info2]: SecondLevel.Info2,
+          [ThirdLevel.Goals2]: ThirdLevel.Goals2,
+        },
+      },
+      [ThirdLevel.Goals1]: {
         meta: {
           story: `**Please Choose Your Goals**`,
         },
         on: {
-          [SecondLevel.HealthCheck]: SecondLevel.HealthCheck,
-          [ThirdLevel.AboutGoals]: ThirdLevel.AboutGoals,
+          [SecondLevel.HealthCheck1]: SecondLevel.HealthCheck1,
+          [ThirdLevel.AboutGoals1]: ThirdLevel.AboutGoals1,
         },
       },
-      [ThirdLevel.AboutGoals]: {
+      [ThirdLevel.Goals2]: {
+        meta: {
+          story: `**Please Choose Your Goals**`,
+        },
+        on: {
+          [SecondLevel.HealthCheck2]: SecondLevel.HealthCheck2,
+          [ThirdLevel.AboutGoals2]: ThirdLevel.AboutGoals2,
+        },
+      },
+      [ThirdLevel.AboutGoals1]: {
         meta: {
           story: `**Please Tell Us About Your Goals** `,
         },
         on: {
-          [ThirdLevel.Goals]: ThirdLevel.Goals,
+          [ThirdLevel.Goals1]: ThirdLevel.Goals1,
           [FourthLevel.RetirementInfo]: FourthLevel.RetirementInfo,
+        },
+      },
+      [ThirdLevel.AboutGoals2]: {
+        meta: {
+          story: `**Please Tell Us About Your Goals** `,
+        },
+        on: {
+          [ThirdLevel.Goals2]: ThirdLevel.Goals2,
+          [FifthLevel.YourGoalSummary2]: FifthLevel.YourGoalSummary2,
         },
       },
       [FourthLevel.RetirementInfo]: {
@@ -145,10 +211,10 @@ const storyMachine = (user: User | null): MachineConfig<any, any, any> => {
           story: `**Your Retirement Spending**  
           ${
             first_name ? first_name + ", add" : "Add "
-          }  your retirement Info here - would like to use this state to navigate to another page`,
+          }  your retirement Info here`,
         },
         on: {
-          [ThirdLevel.AboutGoals]: ThirdLevel.AboutGoals,
+          [ThirdLevel.AboutGoals1]: ThirdLevel.AboutGoals1,
           [FourthLevel.SavingForRetirement]: FourthLevel.SavingForRetirement,
         },
       },
@@ -158,50 +224,98 @@ const storyMachine = (user: User | null): MachineConfig<any, any, any> => {
         },
         on: {
           [FourthLevel.RetirementInfo]: FourthLevel.RetirementInfo,
-          [FifthLevel.YourGoalSummary]: FifthLevel.YourGoalSummary,
+          [FifthLevel.YourGoalSummary1]: FifthLevel.YourGoalSummary1,
         },
       },
-      [FifthLevel.YourGoalSummary]: {
+      [FifthLevel.YourGoalSummary1]: {
         meta: {
-          story: `**Your Goal Summary**`,
+          story: `**Your Goal Summary**  
+          **Goal name:** ${goal_name ? "  " + goal_name : ""}  
+          **Goal notes:** ${goal_notes ? "  " + goal_notes : ""}`,
         },
         on: {
           [FourthLevel.SavingForRetirement]: FourthLevel.SavingForRetirement,
-          [FifthLevel.YourHealthCheckResults]:
-            FifthLevel.YourHealthCheckResults,
+          [FifthLevel.YourHealthCheckResults1]:
+            FifthLevel.YourHealthCheckResults1,
         },
       },
-      [FifthLevel.YourHealthCheckResults]: {
+      [FifthLevel.YourGoalSummary2]: {
+        meta: {
+          story: `**Your Goal Summary**  
+          **Goal name:** ${goal_name ? "  " + goal_name : ""}  
+          **Goal notes:** ${goal_notes ? "  " + goal_notes : ""}`,
+        },
+        on: {
+          [FifthLevel.YourGoalSummary2]: FifthLevel.YourGoalSummary2,
+          [FifthLevel.YourHealthCheckResults2]:
+            FifthLevel.YourHealthCheckResults2,
+        },
+      },
+      [FifthLevel.YourHealthCheckResults1]: {
         meta: {
           story: `**Your Financial Health Check Results**`,
         },
         on: {
           [FourthLevel.RetirementInfo]: FourthLevel.RetirementInfo,
-          [SixthLevel.ThankYou]: SixthLevel.ThankYou,
+          [SixthLevel.ThankYou1]: SixthLevel.ThankYou1,
         },
       },
-      [SixthLevel.ThankYou]: {
+      [FifthLevel.YourHealthCheckResults2]: {
+        meta: {
+          story: `**Your Financial Health Check Results**`,
+        },
+        on: {
+          [FifthLevel.YourGoalSummary2]: FifthLevel.YourGoalSummary2,
+          [SixthLevel.ThankYou2]: SixthLevel.ThankYou2,
+        },
+      },
+      [SixthLevel.ThankYou1]: {
         meta: {
           story: `**Thank You**  
-          ${
-            first_name ? " " + first_name : ""
-          } request a demo and find out how ammonite wealth is empowering financial advisers with the tools to engage and economically service the next generation,`,
+          ${first_name ? " " + first_name : ""} ${getIsClient(
+            _initialConfig.ThankYou.bulletPoint1
+          )}`,
         },
         on: {
-          [FifthLevel.YourHealthCheckResults]:
-            FifthLevel.YourHealthCheckResults,
-          [SixthLevel.GetInTouch]: SixthLevel.GetInTouch,
+          [FifthLevel.YourHealthCheckResults1]:
+            FifthLevel.YourHealthCheckResults1,
+          [SixthLevel.GetInTouch1]: SixthLevel.GetInTouch1,
         },
       },
-      [SixthLevel.GetInTouch]: {
+      [SixthLevel.ThankYou2]: {
         meta: {
-          story: `**Get In Touch**  
-          ${
-            first_name ? " " + first_name : ""
-          } request a demo and find out how ammonite wealth is empowering financial advisers with the tools to engage and economically service the next generation,`,
+          story: `**Thank You**  
+          ${first_name ? " " + first_name : ""} ${getIsClient(
+            _initialConfig.ThankYou.bulletPoint1
+          )}`,
         },
         on: {
-          [SixthLevel.ThankYou]: SixthLevel.ThankYou,
+          [FifthLevel.YourHealthCheckResults2]:
+            FifthLevel.YourHealthCheckResults2,
+          [SixthLevel.GetInTouch2]: SixthLevel.GetInTouch2,
+        },
+      },
+      [SixthLevel.GetInTouch1]: {
+        meta: {
+          story: `**Get In Touch**  
+          ${first_name ? " " + first_name : ""} ${getIsClient(
+            _initialConfig.ThankYou.bulletPoint2
+          )}`,
+        },
+        on: {
+          [SixthLevel.ThankYou1]: SixthLevel.ThankYou1,
+          reStart: IntroVals.Start,
+        },
+      },
+      [SixthLevel.GetInTouch2]: {
+        meta: {
+          story: `**Get In Touch**  
+          ${first_name ? " " + first_name : ""} ${getIsClient(
+            _initialConfig.ThankYou.bulletPoint2
+          )}`,
+        },
+        on: {
+          [SixthLevel.ThankYou2]: SixthLevel.ThankYou2,
           reStart: IntroVals.Start,
         },
       },
