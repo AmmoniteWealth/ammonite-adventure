@@ -39,7 +39,7 @@ enum FourthLevel {
 }
 
 enum FifthLevel {
-  YourGoalSummary1 = "your-goal-summar-1",
+  YourGoalSummary1 = "your-goal-summary-1",
   YourHealthCheckResults1 = "your-financial-health-check-results-1",
   YourGoalSummary2 = "your-goal-summary-2",
   YourHealthCheckResults2 = "your-financial-health-check-results-2",
@@ -68,11 +68,8 @@ const storyMachine = (user: User | null): MachineConfig<any, any, any> => {
       [IntroVals.Start]: {
         meta: {
           story: `**Start**  
-          ${first_name ? first_name : ""} ${getIsClient(
-            _initialConfig.About.Card1.intro
-          )}  
-          **Goalmapper V1 has Retirement info**  
-          **Goalmapper V2 has no Retirement info**`,
+          Goalmapper V1 has Retirement info  
+          Goalmapper V2 has no Retirement info`,
         },
         on: {
           [FirstLevel.GoalMapper1]: FirstLevel.GoalMapper1,
@@ -83,9 +80,9 @@ const storyMachine = (user: User | null): MachineConfig<any, any, any> => {
       [FirstLevel.GoalMapper1]: {
         meta: {
           story: `**Goalmapper V1**  
-          ${
-            first_name ? first_name + ", select " : "Select"
-          } the BASIC INFORMATION button to Start the goalmapper or go to the Dashboard`,
+          ${first_name ? first_name : ""} ${getIsClient(
+            _initialConfig.About.Card2.intro
+          )}`,
         },
         on: {
           [FirstLevel.Dashboard]: FirstLevel.Dashboard,

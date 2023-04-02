@@ -4,6 +4,9 @@ import Layout from "../components/layout";
 import Header from "../components/header";
 import { useAppContext } from "../Context/appContext";
 import { getIsClient } from "./api/getIsClient";
+import styles from "../styles/Home.module.css";
+import Image from "next/image";
+import AmmoniteHiFive from "@/components/highFive";
 import {
   useGetTenantConfigQuery,
   useGetNonClientDataQuery,
@@ -39,6 +42,17 @@ export default function CustomSuccess() {
 
   return (
     <>
+      {/* <Image
+        src=""
+        alt="ammonite logo"
+        className={styles.headerLogo}
+        width="500"
+        height="270"
+      ></Image> */}
+      <div className={styles.headerLogo}>
+        <AmmoniteHiFive />
+      </div>
+
       <Layout story={undefined}>
         <Header
           title={`Thanks ${user?.first_name} for your submission! Once propagated you'll

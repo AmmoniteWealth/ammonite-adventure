@@ -3,8 +3,9 @@ import Layout from "../components/layout";
 import Header from "@/components/header";
 import React from "react";
 import tenantConfig from "../pages/api/tenantConfig.json";
-
-// import { getIsClient } from "./api/getIsClient";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import { getIsClient } from "./api/getIsClient";
 // import {
 //   useGetTenantConfigQuery,
 //   useGetNonClientDataQuery,
@@ -40,15 +41,23 @@ export default function Home() {
   const _initialConfig = tenantConfig.data.config;
   console.log("tenantConfig 2 _initialConfig", _initialConfig);
   return (
-    <Layout story={undefined}>
-      <Header
-        title={"Hello, welcome to the ammonite Goalmapper Builder"}
-        zoom={undefined}
-      />
-      <br />
-      <Link href="/s/start">Start</Link>
-
-      <Link href="/makeYourOwn">Add your details</Link>
-    </Layout>
+    <>
+      <Image
+        src="/financial-planning.png"
+        alt="ammonite logo"
+        className={styles.headerLogo}
+        width="500"
+        height="270"
+      ></Image>
+      <Layout story={undefined}>
+        <Header
+          title={getIsClient(_initialConfig.About.Card3.intro)}
+          zoom={undefined}
+        />
+        <br />
+        <Link href="/s/start">Start Goalmapper</Link>
+        <Link href="/makeYourOwn">Add your details</Link>
+      </Layout>
+    </>
   );
 }

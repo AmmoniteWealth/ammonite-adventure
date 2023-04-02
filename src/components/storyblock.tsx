@@ -5,5 +5,11 @@ interface StoryblockProps {
 }
 
 export default function Storyblock({ children }: StoryblockProps) {
-  return <div className={styles.text}>{children}</div>;
+  return (
+    <>
+      {" "}
+      {/* <div>hhhh</div> */}
+      <div className={styles.text}>{children}</div>
+    </>
+  );
 }

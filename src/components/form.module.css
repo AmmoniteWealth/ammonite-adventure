@@ -21,6 +21,7 @@
 
 .inputField {
   padding: 10px;
+  width: 300px;
   margin: 8px;
   border: 0.5px solid #ccc;
   border-radius: 4px;
