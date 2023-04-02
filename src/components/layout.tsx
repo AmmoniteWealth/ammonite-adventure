@@ -14,7 +14,7 @@ export default function Layout({ children, story }: LayoutProps) {
       <Head>
         <title>ammonite and Next.js Adventure!</title>
       </Head>
-      {story && <Link href="/">Let's Go Home</Link>}
+      {story && <Link href="/">Go Home</Link>}
       <div className={styles.container}>
         <main>{children}</main>
       </div>
