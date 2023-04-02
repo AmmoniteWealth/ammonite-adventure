@@ -1,11 +1,11 @@
 {
   "status": 200,
   "data": {
-    "_id": "641cc5afecbb05062ed1b522",
+    "_id": "",
     "config": {
       "AppSettings": {
-        "org_id": "org_qPy73eB0rmuhsLmh",
-        "uri": "https://demo-config.dev.goal-mapper.co.uk",
+        "org_id": "",
+        "uri": "",
         "backColour": {
           "default": "#7A7A7A",
           "client": ""
@@ -31,7 +31,7 @@
           "client": "* Demo Firm"
         },
         "tenantFCAtext": {
-          "default": "ammonite is authorised and regulated by the Financial Conduct Authority no. 843433",
+          "default": "ammonite is authorised and regulated by the Financial Conduct Authority no. 999993",
           "client": "* Demo Firm is authorised and regulated by the Financial Conduct Authority no. XXXXXX"
         },
         "sendCustomerEmailToTenant": {
@@ -232,8 +232,8 @@
       "Advisors": {
         "default": [
           {
-            "email": "caroline@ammonitewealth.com",
-            "advisorImageUrl": "http://cdn.mcauto-images-production.sendgrid.net/3a0369c3146d2bf1/f299b26e-de59-44b7-8ede-4415293d2359/242x242.png",
+            "email": "",
+            "advisorImageUrl": "",
             "advisorFirstName": "Caroline",
             "advisorLastName": "Duff",
             "advisorJobTitle": "Chartered Financial Adviser",
@@ -249,37 +249,7 @@
         ],
         "client": [
           {
-            "email": "robert@ammonitewealth.com",
-            "advisorImageUrl": "https://storage.googleapis.com/goal-mapper-assets-mgmt-3134/Example%20Adviser.png",
-            "advisorFirstName": "Example",
-            "advisorLastName": "Adviser 1",
-            "advisorJobTitle": "* Financial Adviser",
-            "advisorText": [
-              {
-                "text": "* Example has worked as a Financial Adviser for over 10 years.  She has a wide range of experience, including protection, estate planning and investments, and is an expert in retirement and pension planning."
-              },
-              {
-                "text": "* Example is passionate about working with clients to create a financial plan that works for them, and helps them to achieve their goals."
-              }
-            ]
-          },
-          {
-            "email": "caroline@ammonitewealth.com",
-            "advisorImageUrl": "https://storage.googleapis.com/goal-mapper-assets-mgmt-3134/Example%20Adviser.png",
-            "advisorFirstName": "Example",
-            "advisorLastName": "Adviser 2",
-            "advisorJobTitle": "* Financial Adviser",
-            "advisorText": [
-              {
-                "text": "* Example has worked as a Financial Adviser for over 10 years.  She has a wide range of experience, including protection, estate planning and investments, and is an expert in retirement and pension planning."
-              },
-              {
-                "text": "* Example is passionate about working with clients to create a financial plan that works for them, and helps them to achieve their goals."
-              }
-            ]
-          },
-          {
-            "email": "testing@ammonitewealth.com",
+            "email": "",
             "advisorImageUrl": "https://storage.googleapis.com/goal-mapper-assets-mgmt-3134/Example%20Adviser.png",
             "advisorFirstName": "Example",
             "advisorLastName": "Adviser 3",
